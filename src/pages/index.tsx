@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import styled, { createGlobalStyle } from "styled-components";
 import SkillsList from "../components/SkillsList/SkillsList";
 import WorkExperience from "../components/WorkExperience/WorkExperience";
+import Timeline from "../components/Timeline/Timeline";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -143,6 +144,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Header />
         <SkillsList />
         <WorkExperience />
+        <Timeline />
         <p>
           Edit <code>src/pages/index.tsx</code> to see this page update in
           real-time. 😎
