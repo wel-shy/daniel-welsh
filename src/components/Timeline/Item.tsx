@@ -1,18 +1,28 @@
 import React from "react";
 import { Role } from "./types";
+import styled from "styled-components";
 
-const Item = ({ role }: { role: Role }) => (
-  <div
+const Wrapper = styled.div<{ isSelected: boolean; percent?: number }>`
+  background-color: ${({ isSelected }) => (isSelected ? "red" : "gray")};
+  flex-basis: ${({ percent }) => percent}%;
+  width: 100%;
+`;
+
+interface Props {
+  role: Role;
+  isSelected: boolean;
+  onSelect: () => void;
+}
+
+const Item = ({ role, isSelected, onSelect }: Props) => (
+  <Wrapper
     key={role.company}
-    style={{
-      backgroundColor: "red",
-      height: 10,
-      flexBasis: `${role.percent}%`,
-      width: "100%",
-    }}
+    onClick={onSelect}
+    isSelected={isSelected}
+    percent={role.percent}
   >
-    {role.company}
-  </div>
+    <div>{role.company}</div>
+  </Wrapper>
 );
 
 export default Item;

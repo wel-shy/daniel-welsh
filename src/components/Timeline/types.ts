@@ -4,6 +4,7 @@ export interface WorkExperience {
   from: string;
   role: string;
   to?: string;
+  location: string;
 }
 
 export type Role = Omit<WorkExperience, "from" | "to"> & {

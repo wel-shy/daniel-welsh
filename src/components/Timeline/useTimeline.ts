@@ -1,5 +1,4 @@
 import { Role, WorkExperience } from "./types";
-import { work_experience as data } from "../../content/en.json";
 
 const getMonthsSpan = (startDate: Date, endDate: Date) => {
   const years = endDate.getFullYear() - startDate.getFullYear();
@@ -16,6 +15,26 @@ const parseDataToRoles = (experiences: WorkExperience[]): Role[] =>
   }));
 
 const getPercent = (nom: number, dom: number) => (nom / dom) * 100;
+
+const data = [
+  {
+    role: "Fullstack Software Engineer",
+    company: "Doctolib",
+    from: "2022-04-01",
+    location: "Berlin, Germany",
+    description:
+      "As a software engineer at Doctolib, I specialize in Ruby on Rails, and React. My role involves spearheading projects focused on refactoring, maintaining, and modernizing critical components of the codebase. I actively collaborate with cross-functional teams, provide mentorship to fellow engineers, and take the lead on significant projects driving major product updates.",
+  },
+  {
+    role: "Fullstack Consultant Software Engineer",
+    company: "13|37",
+    from: "2019-08-01",
+    to: "2022-03-01",
+    location: "Stockholm, Sweden",
+    description:
+      "I worked at 13|37 as a Consultant Fullstack Software Engineer. I consulted on varied and challenging software projects across Stockholm. I predominately worked with JavaScript, Node, Express, and React to help clients achieve their technical needs, and using other technologies as necessary. I have worked with micro-service architectures both small and large teams - using CI/CD and terraform to manage projects. I mostly worked as a technical partner with clients, helping to identify, plan, and then achieve their software development needs.",
+  },
+];
 
 const useTimeline = () => {
   const getFormattedTimeline = () => {

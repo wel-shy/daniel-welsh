@@ -1,5 +1,6 @@
 import React from "react";
-import { skills } from "../../content/en.json";
+
+const skills = ["JavaScript", "TypeScript", "React", "Ruby", "Ruby on Rails"];
 
 const SkillsList = () => (
   <ul>
