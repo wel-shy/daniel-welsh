@@ -34,20 +34,28 @@ const Wrapper = styled.div`
   }
 `;
 
+const Details = ({ role }: { role: Role }) => (
+  <Wrapper>
+    <div className="role-header">
+      <h3>{role.company}</h3>
+      <p>
+        {role.from.toDateString()} - {role.to.toDateString()}
+      </p>
+    </div>
+    <h4>{role.role}</h4>
+
+    <p className="location">{role.location}</p>
+    <p className="description">{role.description}</p>
+  </Wrapper>
+);
+
 const RoleDetails = ({ role }: { role: Role }) => {
   return (
-    <Wrapper>
-      <div className="role-header">
-        <h3>{role.company}</h3>
-        <p>
-          {role.from.toDateString()} - {role.to.toDateString()}
-        </p>
-      </div>
-      <h4>{role.role}</h4>
-
-      <p className="location">{role.location}</p>
-      <p className="description">{role.description}</p>
-    </Wrapper>
+    <>
+      <Details role={role} />
+      {role.subRoles &&
+        role.subRoles.map((role) => <Details role={role as any} />)}
+    </>
   );
 };
 

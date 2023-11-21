@@ -2,13 +2,15 @@ export interface WorkExperience {
   company: string;
   description: string;
   from: string;
-  role: string;
-  to?: string;
   location: string;
+  role: string;
+  subRoles?: Omit<WorkExperience, "subRoles">[];
+  to?: string;
 }
 
-export type Role = Omit<WorkExperience, "from" | "to"> & {
+export type Role = Omit<WorkExperience, "from" | "to" | "subRoles"> & {
   from: Date;
-  to: Date;
   percent?: number;
+  to: Date;
+  subRoles?: Role[];
 };
