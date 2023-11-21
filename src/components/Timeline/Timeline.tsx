@@ -7,9 +7,9 @@ import RoleDetails from "./RoleDetails";
 
 const TimelineWrapper = styled.div`
   display: flex;
-  height: 20px;
-  gap: 10px;
   flex-direction: row;
+  gap: 10px;
+  height: 20px;
 `;
 
 const Timeline = () => {

@@ -3,8 +3,11 @@ import { Role } from "./types";
 import styled from "styled-components";
 
 const Wrapper = styled.div<{ isSelected: boolean; percent?: number }>`
-  background-color: ${({ isSelected }) => (isSelected ? "red" : "gray")};
+  background-color: ${({ isSelected }) => (isSelected ? "tomato" : "gray")};
+  border-radius: 0.25em;
   flex-basis: ${({ percent }) => percent}%;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
   transition: 0.5s ease all;
   width: 100%;
 
