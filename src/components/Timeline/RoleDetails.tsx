@@ -1,6 +1,7 @@
 import React from "react";
 import { Role } from "./types";
 import styled from "styled-components";
+import { format } from "date-fns/format";
 
 const Wrapper = styled.div`
   & .role-header {
@@ -33,20 +34,25 @@ const Wrapper = styled.div`
   }
 `;
 
-const Details = ({ role }: { role: Role }) => (
-  <Wrapper>
-    <div className="role-header">
-      <h3>{role.company}</h3>
-      <p className="dates">
-        {role.from.toDateString()} - {role.to.toDateString()}
-      </p>
-    </div>
-    <h4>{role.role}</h4>
+const Details = ({ role }: { role: Role }) => {
+  const startDate = format(role.from, "MMMM yyyy");
+  const endDate = format(role.to, "MMMM yyyy");
 
-    <p className="location">{role.location}</p>
-    <p className="description">{role.description}</p>
-  </Wrapper>
-);
+  return (
+    <Wrapper>
+      <div className="role-header">
+        <h3>{role.company}</h3>
+        <p className="dates">
+          {startDate} - {endDate}
+        </p>
+      </div>
+      <h4>{role.role}</h4>
+
+      <p className="location">{role.location}</p>
+      <p className="description">{role.description}</p>
+    </Wrapper>
+  );
+};
 
 const RoleDetails = ({ role }: { role: Role }) => {
   return (
