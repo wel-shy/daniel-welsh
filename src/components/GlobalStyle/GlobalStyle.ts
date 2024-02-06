@@ -20,17 +20,13 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 2em;
   }
 
-  code {
-    background-color: "#FFF4DB";
-    border-radius: 4px;
-    color: "#8A6534";
-    font-size: "1.25rem";
-    padding: 4px;
-  }
-
   ul {
     margin-bottom: 96;
     padding-left: 0;
+  }
+
+  h4 {
+    margin-top: 0;
   }
 `;
 

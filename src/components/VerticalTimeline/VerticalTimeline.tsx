@@ -4,7 +4,6 @@ import styled from "styled-components";
 import RoleDetails from "../Timeline/RoleDetails";
 
 const Role = styled.div<{ percent: number }>`
-  /* min-height: ${({ percent }) => percent * 3}px; */
   border-left: 1px solid white;
   align-items: center;
   padding: 0.5em;
@@ -24,6 +23,10 @@ const TimelineIcon = styled.div`
   position: relative;
   left: -1em;
   box-shadow: 0 0 0 5px #1f1f1f;
+`;
+
+const RoleDetailsWrapper = styled.div`
+  padding-left: 1em;
 `;
 
 const VerticalTimeline = () => {
@@ -50,9 +53,9 @@ const VerticalTimeline = () => {
             </TitleAndIcon>
 
             {role.company === selectedItem && (
-              <div style={{ paddingLeft: "1em" }}>
+              <RoleDetailsWrapper>
                 <RoleDetails role={role} />
-              </div>
+              </RoleDetailsWrapper>
             )}
           </Role>
         ))}

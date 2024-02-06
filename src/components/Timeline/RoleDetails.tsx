@@ -12,10 +12,11 @@ const Wrapper = styled.div`
     @media (max-width: 768px) {
       display: block;
     }
+  }
 
-    .dates {
-      margin-top: 0.5em;
-    }
+  .dates {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
   }
 
   h4 {
@@ -23,23 +24,28 @@ const Wrapper = styled.div`
     margin-bottom: 0.25em;
   }
 
-  & .location {
-    margin: 0;
+  .location {
+    margin-bottom: 1em;
+  }
+
+  .description {
+    margin-bottom: 2em;
   }
 `;
 
-const Details = ({ role }: { role: Role }) => {
+const Details = ({ role, isSubRole }: { role: Role; isSubRole?: boolean }) => {
   const startDate = format(role.from, "MMMM yyyy");
   const endDate = format(role.to, "MMMM yyyy");
 
   return (
     <Wrapper>
+      {isSubRole && <h4>{role.company}</h4>}
       <h4>{role.role}</h4>
-      <p>
+      <div className="dates">
         {startDate} - {endDate}
-      </p>
-      <p className="location">{role.location}</p>
-      <p className="description">{role.description}</p>
+      </div>
+      <div className="location">{role.location}</div>
+      <div className="description">{role.description}</div>
     </Wrapper>
   );
 };
@@ -49,7 +55,7 @@ const RoleDetails = ({ role }: { role: Role }) => {
     <>
       <Details role={role} />
       {role.subRoles &&
-        role.subRoles.map((role) => <Details role={role as any} />)}
+        role.subRoles.map((role) => <Details role={role as any} isSubRole />)}
     </>
   );
 };
