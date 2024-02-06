@@ -8,14 +8,18 @@ const Wrapper = styled.div`
     display: flex;
     margin-bottom: 0em;
 
+    @media (max-width: 768px) {
+      display: block;
+    }
+
     h3 {
       flex: 1;
-      font-size: 2em;
+      font-size: 1.5em;
       margin-bottom: 0em;
     }
 
-    p {
-      margin-bottom: 0em;
+    .dates {
+      margin-top: 0.5em;
     }
   }
 
@@ -33,7 +37,7 @@ const Details = ({ role }: { role: Role }) => (
   <Wrapper>
     <div className="role-header">
       <h3>{role.company}</h3>
-      <p>
+      <p className="dates">
         {role.from.toDateString()} - {role.to.toDateString()}
       </p>
     </div>

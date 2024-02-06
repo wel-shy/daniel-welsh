@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1000px;
     margin: auto;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 768px) {
       max-width: 90vw;
     }
   }
