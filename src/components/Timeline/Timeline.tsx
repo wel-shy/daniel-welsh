@@ -33,6 +33,7 @@ const Timeline = () => {
                 role={role}
                 isSelected={role.company === selectedRole.company}
                 onSelect={() => setSelectedRole(role)}
+                key={role.company}
               />
             ))}
           </TimelineWrapper>

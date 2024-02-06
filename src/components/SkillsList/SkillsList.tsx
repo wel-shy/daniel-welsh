@@ -65,10 +65,12 @@ const SkillsList = () => {
       {!isOpen ? null : (
         <SkillsWrapper>
           {primarySkills.map((skill) => (
-            <li className="primary-skill">{skill}</li>
+            <li className="primary-skill" key={skill}>
+              {skill}
+            </li>
           ))}
           {secondarySkills.map((skill) => (
-            <li>{skill}</li>
+            <li key={skill}>{skill}</li>
           ))}
         </SkillsWrapper>
       )}
