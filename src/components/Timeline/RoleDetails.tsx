@@ -27,11 +27,6 @@ const Wrapper = styled.div`
   & .location {
     margin: 0;
   }
-
-  // TODO: Make response to screen width.
-  .description {
-    max-width: 50vw;
-  }
 `;
 
 const Details = ({ role }: { role: Role }) => (

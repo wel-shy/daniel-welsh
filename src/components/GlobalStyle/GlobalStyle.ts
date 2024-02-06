@@ -8,6 +8,12 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     padding: 2em;
     min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+
+    @media (max-width: 1000px) {
+      max-width: 90vw;
+    }
   }
 
   p {
