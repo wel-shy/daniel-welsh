@@ -3,8 +3,8 @@ import type { HeadFC, PageProps } from "gatsby";
 import Header from "../components/Header/Header";
 import styled from "styled-components";
 import SkillsList from "../components/SkillsList/SkillsList";
-import Timeline from "../components/Timeline/Timeline";
 import GlobalStyle from "../components/GlobalStyle/GlobalStyle";
+import VerticalTimeline from "../components/VerticalTimeline/VerticalTimeline";
 
 const ContentWrapper = styled.div`
   border: solid white 1px;
@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <ContentWrapper>
         <Header />
         <SkillsList />
-        <Timeline />
+        <VerticalTimeline />
       </ContentWrapper>
     </main>
   );

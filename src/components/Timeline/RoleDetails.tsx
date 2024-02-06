@@ -13,12 +13,6 @@ const Wrapper = styled.div`
       display: block;
     }
 
-    h3 {
-      flex: 1;
-      font-size: 1.5em;
-      margin-bottom: 0em;
-    }
-
     .dates {
       margin-top: 0.5em;
     }
@@ -40,14 +34,10 @@ const Details = ({ role }: { role: Role }) => {
 
   return (
     <Wrapper>
-      <div className="role-header">
-        <h3>{role.company}</h3>
-        <p className="dates">
-          {startDate} - {endDate}
-        </p>
-      </div>
       <h4>{role.role}</h4>
-
+      <p>
+        {startDate} - {endDate}
+      </p>
       <p className="location">{role.location}</p>
       <p className="description">{role.description}</p>
     </Wrapper>
