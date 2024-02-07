@@ -5,6 +5,7 @@ import styled from "styled-components";
 import SkillsList from "../components/SkillsList/SkillsList";
 import GlobalStyle from "../components/GlobalStyle/GlobalStyle";
 import VerticalTimeline from "../components/VerticalTimeline/VerticalTimeline";
+import Education from "../components/Education/Education";
 
 const ContentWrapper = styled.div`
   border: solid white 1px;
@@ -24,6 +25,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Header />
         <SkillsList />
         <VerticalTimeline />
+        <Education />
       </ContentWrapper>
     </main>
   );
