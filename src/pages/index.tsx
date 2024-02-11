@@ -1,32 +1,25 @@
 import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
+import type { HeadFC } from "gatsby";
 import Header from "../components/Header/Header";
-import styled from "styled-components";
 import SkillsList from "../components/SkillsList/SkillsList";
 import GlobalStyle from "../components/GlobalStyle/GlobalStyle";
 import Timeline from "../components/Timeline/Timeline";
 import Publications from "../components/Publications/Publications";
+import { ThemeProvider } from "styled-components";
+import { darkTheme } from "../components/GlobalStyle/theme";
 
-const ContentWrapper = styled.div`
-  border: solid white 1px;
-  padding: 2em;
-  height: 100%;
-`;
-
-const pageStyles = {
-  height: "100%",
-};
-
-const IndexPage: React.FC<PageProps> = () => {
+const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <GlobalStyle />
-      <ContentWrapper>
-        <Header />
-        <SkillsList />
-        <Timeline />
-        <Publications />
-      </ContentWrapper>
+    <main>
+      <ThemeProvider theme={darkTheme}>
+        <GlobalStyle />
+        <>
+          <Header />
+          <SkillsList />
+          <Timeline />
+          <Publications />
+        </>
+      </ThemeProvider>
     </main>
   );
 };

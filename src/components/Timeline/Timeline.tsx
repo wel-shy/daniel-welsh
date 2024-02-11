@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Item from "./Item";
 
 const Role = styled.div<{ percent?: number }>`
-  border-left: 1px solid white;
+  border-left: 1px solid ${({ theme }) => theme.text};
   align-items: center;
   padding: 0.5em;
   flex-wrap: nowrap;

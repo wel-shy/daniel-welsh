@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: #1f1f1f;
+    background-color: ${({ theme }) => theme.background};
     color: #cfcfcf;
     font-family: -apple-system, Roboto, sans-serif, serif;
     font-size: 14px;
@@ -18,11 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     margin-bottom: 2em;
-  }
-
-  ul {
-    margin-bottom: 96;
-    padding-left: 0;
+    color: ${({ theme }) => theme.text};
   }
 
   h4 {
@@ -30,12 +26,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: #cfcfcf;
+    color: ${({ theme }) => theme.accent};
     text-decoration: none;
     transition: all 0.5s ease;
 
     &:hover {
-      color: #ffffff;
+      color: ${({ theme }) => theme.text};
     }
   }
 `;

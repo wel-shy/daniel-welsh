@@ -19,9 +19,6 @@ export const query = graphql`
 const Container = styled.div`
   display: grid;
 
-  img {
-  }
-
   h1 {
     margin-bottom: 0.5em;
     font-size: 2.5em;
@@ -37,10 +34,9 @@ const Container = styled.div`
     position: relative;
     background-image: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 1) 0%,
+      ${({ theme }) => theme.background} 0%,
       rgba(123, 123, 444, 0) 100%
     );
-    border-radius: 20px;
   }
 `;
 

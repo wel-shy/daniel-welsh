@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useIsSectionOpen from "../../hooks/useIsSectionOpen";
 import styled from "styled-components";
 
@@ -46,13 +46,14 @@ const SkillsWrapper = styled.div`
   gap: 1em;
 
   li {
-    border: 1px solid white;
+    border: 1px solid ${({ theme }) => theme.text};
     padding: 0.5em;
     border-radius: 5px;
   }
 
   li.primary-skill {
     font-weight: bold;
+    background-color: ${({ theme }) => theme.accent};
   }
 `;
 

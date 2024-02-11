@@ -11,17 +11,17 @@ const TitleAndIcon = styled.div`
 const TimelineIcon = styled.div`
   height: 1em;
   width: 1em;
-  background-color: white;
+  background-color: ${({ theme }) => theme.accent};
   border-radius: 50%;
   position: relative;
   left: -1em;
-  box-shadow: 0 0 0 5px #1f1f1f;
+  box-shadow: 0 0 0 5px ${({ theme }) => theme.background};
 `;
 
 const TimelineItem = styled.div<{ isActive?: boolean }>`
-  background-color: ${({ isActive }) =>
-    isActive ? "#3f3b3b" : "transparent"}; // #3f3b3b;
-  border: solid 1px #3f3b3b;
+  background-color: ${({ isActive, theme }) =>
+    isActive ? theme.accent : "transparent"};
+  border: solid 1px ${({ theme }) => theme.accent};
   padding: 1em;
   border-radius: 20px;
   width: 100%;
@@ -29,7 +29,7 @@ const TimelineItem = styled.div<{ isActive?: boolean }>`
   cursor: pointer;
 
   &:hover {
-    background-color: #3f3b3b;
+    background-color: ${({ theme }) => theme.accent};
   }
 
   .institution {
