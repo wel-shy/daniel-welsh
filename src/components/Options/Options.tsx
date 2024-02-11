@@ -24,14 +24,27 @@ const Container = styled.div`
 interface OptionsProps {
   setTheme: (theme: ThemeLabel) => void;
   theme: DefaultTheme;
+  increaseFontSize: () => void;
+  decreaseFontSize: () => void;
 }
 
-const Options = ({ setTheme, theme }: OptionsProps) => {
+const Options = ({
+  setTheme,
+  theme,
+  increaseFontSize,
+  decreaseFontSize,
+}: OptionsProps) => {
   return (
     <Container>
       <div className="font-size">
-        <VscTextSize style={{ fontSize: "0.75em" }} />
-        <VscTextSize style={{ fontSize: "1.25em" }} />
+        <VscTextSize
+          style={{ fontSize: "0.75em" }}
+          onClick={decreaseFontSize}
+        />
+        <VscTextSize
+          style={{ fontSize: "1.25em" }}
+          onClick={increaseFontSize}
+        />
       </div>
       <div>
         {theme.label === ThemeLabel.DARK ? (

@@ -19,9 +19,17 @@ const useThemeDetector = (setTheme: Dispatch<SetStateAction<DefaultTheme>>) => {
   }, []);
 };
 
-const useDarkTheme = () => {
+interface Params {
+  fontSize: number;
+}
+
+const useDarkTheme = ({ fontSize }: Params) => {
   const [theme, setTheme] = useState<DefaultTheme>(darkTheme);
   useThemeDetector(setTheme);
+
+  useEffect(() => {
+    setTheme((prev) => ({ ...prev, fontSize }));
+  }, [fontSize]);
 
   return {
     theme,

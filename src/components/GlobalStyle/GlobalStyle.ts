@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     padding: 2em;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: ${({ theme }) => theme.fontSize}px;
 
     @media (max-width: 768px) {
       max-width: 90vw;

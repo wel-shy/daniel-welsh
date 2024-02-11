@@ -5,6 +5,8 @@ export enum ThemeLabel {
   LIGHT,
 }
 
+export const defaultFontSize = 16;
+
 export const darkTheme: DefaultTheme = {
   background: "#0D1B2A",
   text: "#E0E1DD",
@@ -12,6 +14,7 @@ export const darkTheme: DefaultTheme = {
   accent: "#415A77",
   white: "#E0E1DD",
   label: ThemeLabel.DARK,
+  fontSize: defaultFontSize,
 };
 
 export const lightTheme: DefaultTheme = {
@@ -21,4 +24,5 @@ export const lightTheme: DefaultTheme = {
   shadow: "#1B263B",
   white: "#E0E1DD",
   label: ThemeLabel.LIGHT,
+  fontSize: defaultFontSize,
 };

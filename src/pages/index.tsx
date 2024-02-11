@@ -8,16 +8,23 @@ import Publications from "../components/Publications/Publications";
 import { ThemeProvider } from "styled-components";
 import useDarkTheme from "../hooks/useDarkTheme";
 import Options from "../components/Options/Options";
+import useFontSize from "../hooks/useFontSize";
 
 const IndexPage = () => {
-  const { theme, setTheme } = useDarkTheme();
+  const { fontSize, increaseFontSize, decreaseFontSize } = useFontSize();
+  const { theme, setTheme } = useDarkTheme({ fontSize });
 
   return (
     <main>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <>
-          <Options setTheme={setTheme} theme={theme} />
+          <Options
+            setTheme={setTheme}
+            theme={theme}
+            increaseFontSize={increaseFontSize}
+            decreaseFontSize={decreaseFontSize}
+          />
           <Header />
           <SkillsList />
           <Timeline />

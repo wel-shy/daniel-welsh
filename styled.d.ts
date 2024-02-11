@@ -9,5 +9,6 @@ declare module "styled-components" {
     shadow: string;
     white: string;
     label: ThemeLabel;
+    fontSize: number;
   }
 }
