@@ -13,7 +13,7 @@ const parseDataToRoles = (experiences: WorkExperience[]): Role[] =>
     ...exp,
     from: new Date(exp.from),
     to: exp.to ? new Date(exp.to) : new Date(),
-    subRoles: exp.subRoles ? parseDataToRoles(exp.subRoles) : undefined,
+    subRoles: exp.sub_roles ? parseDataToRoles(exp.sub_roles) : undefined,
     id: `${exp.institution}-${exp.from}-${exp.grade}`,
   }));
 

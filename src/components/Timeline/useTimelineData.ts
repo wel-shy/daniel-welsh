@@ -24,6 +24,13 @@ const query = graphql`
             to
             location
             description
+            sub_roles {
+              role
+              from
+              to
+              location
+              description
+            }
           }
           education {
             role

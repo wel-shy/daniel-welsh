@@ -5,7 +5,7 @@ export interface WorkExperience {
   institution: string;
   location: string;
   role: string;
-  subRoles?: Omit<WorkExperience, "subRoles">[];
+  sub_roles?: Omit<WorkExperience, "subRoles">[];
   to?: string;
 }
 
