@@ -54,6 +54,7 @@ const SkillsWrapper = styled.div`
   li.primary-skill {
     font-weight: bold;
     background-color: ${({ theme }) => theme.accent};
+    color: ${({ theme }) => theme.white};
   }
 `;
 

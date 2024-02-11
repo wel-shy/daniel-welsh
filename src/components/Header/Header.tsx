@@ -52,7 +52,7 @@ const Header = () => {
       <GatsbyImage
         image={gatsbyImageData}
         alt="Profile picture"
-        style={{ gridArea: "1/1", borderRadius: "20px" }}
+        style={{ gridArea: "1/1" }}
       />
       <div className="details">
         <h1>Daniel Welsh</h1>

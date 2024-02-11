@@ -5,11 +5,13 @@ export const darkTheme: DefaultTheme = {
   text: "#E0E1DD",
   shadow: "#1B263B",
   accent: "#415A77",
+  white: "#E0E1DD",
 };
 
 export const lightTheme: DefaultTheme = {
   background: "#E0E1DD",
   text: "#0D1B2A",
-  accent: "#778DA9",
+  accent: "#415A77",
   shadow: "#1B263B",
+  white: "#E0E1DD",
 };

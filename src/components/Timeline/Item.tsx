@@ -9,24 +9,25 @@ const TitleAndIcon = styled.div`
 `;
 
 const TimelineIcon = styled.div`
-  height: 1em;
-  width: 1em;
   background-color: ${({ theme }) => theme.accent};
   border-radius: 50%;
-  position: relative;
-  left: -1em;
   box-shadow: 0 0 0 5px ${({ theme }) => theme.background};
+  height: 1em;
+  left: -1em;
+  position: relative;
+  width: 1em;
 `;
 
 const TimelineItem = styled.div<{ isActive?: boolean }>`
   background-color: ${({ isActive, theme }) =>
     isActive ? theme.accent : "transparent"};
-  border: solid 1px ${({ theme }) => theme.accent};
-  padding: 1em;
   border-radius: 20px;
-  width: 100%;
-  transition: all 0.5s ease;
+  border: solid 1px ${({ theme }) => theme.accent};
+  color: ${({ isActive, theme }) => (isActive ? theme.white : theme.text)};
   cursor: pointer;
+  padding: 1em;
+  transition: all 0.5s ease;
+  width: 100%;
 
   &:hover {
     background-color: ${({ theme }) => theme.accent};
