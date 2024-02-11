@@ -18,6 +18,8 @@ export const query = graphql`
 
 const Container = styled.div`
   display: grid;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
 
   h1 {
     margin-bottom: 0.5em;
@@ -33,10 +35,12 @@ const Container = styled.div`
     grid-area: 1/1;
     position: relative;
     background-image: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.background} 0%,
-      rgba(123, 123, 444, 0) 100%
+      135deg,
+      ${({ theme }) => theme.background} 3%,
+      rgba(255, 255, 255, 0) 78%,
+      ${({ theme }) => theme.background} 100%
     );
+    border-radius: 15px;
   }
 `;
 
@@ -52,7 +56,7 @@ const Header = () => {
       <GatsbyImage
         image={gatsbyImageData}
         alt="Profile picture"
-        style={{ gridArea: "1/1" }}
+        style={{ gridArea: "1/1", borderRadius: "15px" }}
       />
       <div className="details">
         <h1>Daniel Welsh</h1>
