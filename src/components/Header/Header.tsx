@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 export const query = graphql`
   query {
@@ -45,6 +46,12 @@ const Container = styled.div`
       ${({ theme }) => theme.background} 100%
     );
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summary {
+    flex: 1;
   }
 `;
 
@@ -63,9 +70,13 @@ const Header = () => {
         style={{ gridArea: "1/1", borderRadius: "15px" }}
       />
       <div className="details">
-        <h1>Daniel Welsh</h1>
-        <p>Fullstack Software Engineer</p>
-        <p className="location">Berlin, Germany</p>
+        <div className="summary">
+          <h1>Daniel Welsh</h1>
+          <p>Fullstack Software Engineer</p>
+          <p className="location">Berlin, Germany</p>
+        </div>
+
+        <SocialLinks />
       </div>
     </Container>
   );

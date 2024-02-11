@@ -185,5 +185,11 @@
           "reference":
             "Welsh, D. (2017). A Ticket to Talk: Scaffolding intergenerational interactions for dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17. Position Paper"
         }
+      ],
+      "social_links": [
+        {"platform": "email", "link": "mailto:e@dwelsh.uk"},
+        {"platform": "linkedin", "link": "https://www.linkedin.com/in/daniel-welsh-914776150/"},
+        {"platform": "instagram", "link": "https://www.instagram.com/wel__shy/"},
+        {"platform": "github", "link": "https://github.com/wel-shy"}
       ]
 }
