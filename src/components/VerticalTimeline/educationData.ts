@@ -1,7 +1,9 @@
+import { WorkExperience } from "./types";
+
 // TODO: Add links
-const data = [
+const data: WorkExperience[] = [
   {
-    title: "BSc Computing Science",
+    role: "BSc Computing Science",
     institution: "Newcastle University",
     grade: "First Class (Hons)",
     from: "2013-09-01",
@@ -11,7 +13,7 @@ const data = [
       "During my undergraduate degree, I learnt a diverse range of skills in computing science, including software design, web and app development, and human computer interaction. I used these skills to co-design a web application with older people. This system helped older people facing age related conditions share healthy recipes with other people who have similar dietary requirements. Furthermore, I learnt the fundamentals of software development practices, designing algorithms, system security, cryptography and fault tolerances.",
   },
   {
-    title: "MRes Digital Civics",
+    role: "MRes Digital Civics",
     institution: "Newcastle University",
     grade: "Distinction",
     from: "2016-09-01",
@@ -21,7 +23,7 @@ const data = [
       "This Masters focussed on developing technologies to aid social care. I conducted research into how technology can support intergenerational interactions between young people and people with dementia. As part of this I developed a mobile application called Ticket to Talk. I learnt to work closely with families and people with dementia in a user-centred design process, as well as care homes, and local charities to evaluate and improve the technology. ESRC and Newcastle University ran a full press release on the project, as well the UK’s Department for Business, Energy, and Industrial Strategy including the app in their latest industrial campaign. In I developed skills in developing ubiquitous technologies, peer programming, and mobile development.",
   },
   {
-    title: "PhD Digital Civics",
+    role: "PhD Digital Civics",
     institution: "Newcastle University",
     grade: "Incomplete",
     from: "2017-09-01",
@@ -32,8 +34,4 @@ const data = [
   },
 ];
 
-const useEducationData = () => {
-  return { data };
-};
-
-export default useEducationData;
+export default data;

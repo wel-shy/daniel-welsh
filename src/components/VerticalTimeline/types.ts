@@ -6,6 +6,7 @@ export interface WorkExperience {
   role: string;
   subRoles?: Omit<WorkExperience, "subRoles">[];
   to?: string;
+  grade?: string;
 }
 
 export type Role = Omit<WorkExperience, "from" | "to" | "subRoles"> & {

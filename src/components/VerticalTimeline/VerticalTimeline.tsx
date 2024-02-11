@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import useTimeline from "../Timeline/useTimeline";
+import useTimeline from "./useTimeline";
 import styled from "styled-components";
-import RoleDetails from "../Timeline/RoleDetails";
+import RoleDetails from "./RoleDetails";
 
 const Role = styled.div<{ percent: number }>`
   border-left: 1px solid white;
@@ -49,7 +49,12 @@ const VerticalTimeline = () => {
           >
             <TitleAndIcon>
               <TimelineIcon />
-              <h3>{role.institution}</h3>
+              <div>
+                <h3>
+                  {role.role}: {role.grade}
+                </h3>
+                <div>{role.institution}</div>
+              </div>
             </TitleAndIcon>
 
             {role.institution === selectedItem && (
