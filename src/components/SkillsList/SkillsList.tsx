@@ -1,43 +1,7 @@
 import React from "react";
 import useIsSectionOpen from "../../hooks/useIsSectionOpen";
 import styled from "styled-components";
-
-const primarySkills = [
-  "C#",
-  "TypeScript",
-  "JavaScript",
-  "Express.js",
-  ".Net",
-  "Machine Learning",
-  "SQL",
-  "MongoDB",
-  "Python",
-  "Java",
-  "Git",
-  "CI/CD",
-  "Vue.js",
-  "Linux",
-  "AWS",
-  "Unit Testing",
-  "Kubernetes",
-  "React",
-  "Ruby on Rails",
-  "Ruby",
-  "Docker",
-  "Terraform",
-];
-
-const secondarySkills = [
-  "Analysis",
-  "Time Management",
-  "Adaptive",
-  "Information Dissemination",
-  "Problem Solving",
-  "Interaction Design",
-  "Qualitative Research",
-  "Agile",
-  "Scrum",
-];
+import useData from "./useData";
 
 const SkillsWrapper = styled.div`
   display: flex;
@@ -60,6 +24,7 @@ const SkillsWrapper = styled.div`
 
 const SkillsList = () => {
   const { isOpen, toggle } = useIsSectionOpen();
+  const { secondarySkills, primarySkills } = useData();
 
   return (
     <div>

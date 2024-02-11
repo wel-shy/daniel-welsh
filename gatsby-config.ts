@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+import path from "path";
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -22,6 +23,13 @@ const config: GatsbyConfig = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `content`),
+      },
     },
     {
       resolve: `gatsby-omni-font-loader`,
