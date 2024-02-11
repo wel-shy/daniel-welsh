@@ -6,16 +6,20 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: -apple-system, Roboto, sans-serif, serif;
     font-size: 14px;
-    margin: auto;
-    max-width: 1000px;
-    min-height: 100vh;
     padding: 2em;
     font-family: "Inter", sans-serif;
     font-size: ${({ theme }) => theme.fontSize}px;
+    transition: all 0.5s ease;
 
     @media (max-width: 768px) {
       max-width: 90vw;
     }
+  }
+
+  .content {
+    margin: auto;
+    max-width: 1000px;
+    min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -34,7 +38,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.accent};
     text-decoration: none;
-    transition: all 0.5s ease;
 
     &:hover {
       color: ${({ theme }) => theme.text};

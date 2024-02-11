@@ -7,17 +7,21 @@ import { ThemeLabel } from "../GlobalStyle/theme";
 const Container = styled.div`
   font-size: 2em;
   display: flex;
-  align-items: center;
-  vertical-align: middle;
+  align-items: end;
   justify-content: end;
+  margin-bottom: 0.5em;
+  gap: 0.25em;
 
   .font-size {
     display: flex;
-    align-items: bottom;
+    align-items: end;
+    gap: 0.25em;
   }
 
   svg {
     cursor: pointer;
+    padding: 0;
+    margin: 0;
   }
 `;
 

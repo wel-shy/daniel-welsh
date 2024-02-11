@@ -26,7 +26,6 @@ const TimelineItem = styled.div<{ isActive?: boolean }>`
   color: ${({ isActive, theme }) => (isActive ? theme.white : theme.text)};
   cursor: pointer;
   padding: 1em;
-  transition: all 0.5s ease;
   width: 100%;
 
   &:hover {

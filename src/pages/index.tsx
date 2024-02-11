@@ -18,18 +18,18 @@ const IndexPage = () => {
     <main>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <>
-          <Options
-            setTheme={setTheme}
-            theme={theme}
-            increaseFontSize={increaseFontSize}
-            decreaseFontSize={decreaseFontSize}
-          />
+        <Options
+          setTheme={setTheme}
+          theme={theme}
+          increaseFontSize={increaseFontSize}
+          decreaseFontSize={decreaseFontSize}
+        />
+        <div className="content">
           <Header />
           <SkillsList />
           <Timeline />
           <Publications />
-        </>
+        </div>
       </ThemeProvider>
     </main>
   );
