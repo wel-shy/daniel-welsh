@@ -7,6 +7,7 @@ import Timeline from "../components/Timeline/Timeline";
 import Publications from "../components/Publications/Publications";
 import { ThemeProvider } from "styled-components";
 import useDarkTheme from "../hooks/useDarkTheme";
+import Options from "../components/Options/Options";
 
 const IndexPage = () => {
   const { theme } = useDarkTheme();
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <>
+          <Options />
           <Header />
           <SkillsList />
           <Timeline />
