@@ -1,5 +1,5 @@
 export interface WorkExperience {
-  company: string;
+  institution: string;
   description: string;
   from: string;
   location: string;

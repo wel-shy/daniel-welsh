@@ -11,7 +11,7 @@ const Education = () => {
         {data.map((education) => (
           <div key={education.title}>
             <h3>{education.title}</h3>
-            <h4>{education.school}</h4>
+            <h4>{education.institution}</h4>
             <div>
               {education.from} - {education.to}
             </div>

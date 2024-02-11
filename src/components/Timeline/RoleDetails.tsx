@@ -39,7 +39,7 @@ const Details = ({ role, isSubRole }: { role: Role; isSubRole?: boolean }) => {
 
   return (
     <Wrapper>
-      {isSubRole && <h4>{role.company}</h4>}
+      {isSubRole && <h4>{role.institution}</h4>}
       <h4>{role.role}</h4>
       <div className="dates">
         {startDate} - {endDate}

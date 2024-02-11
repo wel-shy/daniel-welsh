@@ -20,7 +20,7 @@ const getPercent = (nom: number, dom: number) => (nom / dom) * 100;
 const data = [
   {
     role: "PhD Student",
-    company: "Newcastle University",
+    institution: "Newcastle University",
     from: "2017-09-01",
     to: "2019-04-01",
     location: "Newcastle upon Tyne, United Kingdom",
@@ -29,7 +29,7 @@ const data = [
     subRoles: [
       {
         role: "Research Software Engineer",
-        company: "Newcastle University / Northumbria University",
+        institution: "Newcastle University / Northumbria University",
         from: "2017-01-01",
         to: "2019-04-01",
         location: "Newcastle upon Tyne, United Kingdom",
@@ -40,7 +40,7 @@ const data = [
   },
   {
     role: "Backend Software Engineer",
-    company: "Qred",
+    institution: "Qred",
     from: "2019-05-01",
     to: "2019-08-01",
     location: "Stockholm, Sweden",
@@ -49,7 +49,7 @@ const data = [
   },
   {
     role: "Fullstack Software Engineer",
-    company: "Doctolib",
+    institution: "Doctolib",
     from: "2022-04-01",
     location: "Berlin, Germany",
     description:
@@ -57,7 +57,7 @@ const data = [
   },
   {
     role: "Fullstack Consultant Software Engineer",
-    company: "13|37",
+    institution: "13|37",
     from: "2019-08-01",
     to: "2022-03-01",
     location: "Stockholm, Sweden",
@@ -66,7 +66,7 @@ const data = [
     subRoles: [
       {
         role: "Fullstack Software Engineer (Consultant)",
-        company: "Paradox Interactive",
+        institution: "Paradox Interactive",
         from: "2019-09-01",
         to: "2021-09-01",
         location: "Stockholm, Sweden",
@@ -74,7 +74,7 @@ const data = [
       },
       {
         role: "Fullstack Software Engineer (Consultant)",
-        company: "Chroma",
+        institution: "Chroma",
         from: "2021-09-01",
         to: "2022-02-01",
         location: "Stockholm, Sweden",

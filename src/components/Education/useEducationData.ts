@@ -2,7 +2,7 @@
 const data = [
   {
     title: "BSc Computing Science",
-    school: "Newcastle University",
+    institution: "Newcastle University",
     grade: "First Class (Hons)",
     from: "2013-09-01",
     to: "2016-05-01",
@@ -12,7 +12,7 @@ const data = [
   },
   {
     title: "MRes Digital Civics",
-    school: "Newcastle University",
+    institution: "Newcastle University",
     grade: "Distinction",
     from: "2016-09-01",
     to: "2017-08-01",
@@ -22,7 +22,7 @@ const data = [
   },
   {
     title: "PhD Digital Civics",
-    school: "Newcastle University",
+    institution: "Newcastle University",
     grade: "Incomplete",
     from: "2017-09-01",
     to: "2019-05-01",

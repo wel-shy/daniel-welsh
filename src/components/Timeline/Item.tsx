@@ -26,12 +26,12 @@ interface Props {
 
 const Item = ({ role, isSelected, onSelect }: Props) => (
   <Wrapper
-    key={role.company}
+    key={role.institution}
     onClick={onSelect}
     isSelected={isSelected}
     percent={role.percent}
   >
-    <div>{role.company}</div>
+    <div>{role.institution}</div>
   </Wrapper>
 );
 

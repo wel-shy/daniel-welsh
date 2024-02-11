@@ -33,7 +33,7 @@ const VerticalTimeline = () => {
   const { getFormattedTimeline } = useTimeline();
   const timeline = getFormattedTimeline();
   const [selectedItem, setSelectedItem] = useState<string>(
-    timeline[timeline.length - 1].company
+    timeline[timeline.length - 1].institution
   );
 
   return (
@@ -43,16 +43,16 @@ const VerticalTimeline = () => {
         {timeline.map((role) => (
           <Role
             className="role"
-            key={role.company}
+            key={role.institution}
             percent={role.percent}
-            onClick={() => setSelectedItem(role.company)}
+            onClick={() => setSelectedItem(role.institution)}
           >
             <TitleAndIcon>
               <TimelineIcon />
-              <h3>{role.company}</h3>
+              <h3>{role.institution}</h3>
             </TitleAndIcon>
 
-            {role.company === selectedItem && (
+            {role.institution === selectedItem && (
               <RoleDetailsWrapper>
                 <RoleDetails role={role} />
               </RoleDetailsWrapper>

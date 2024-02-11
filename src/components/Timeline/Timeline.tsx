@@ -31,9 +31,9 @@ const Timeline = () => {
             {timeline.map((role) => (
               <Item
                 role={role}
-                isSelected={role.company === selectedRole.company}
+                isSelected={role.institution === selectedRole.institution}
                 onSelect={() => setSelectedRole(role)}
-                key={role.company}
+                key={role.institution}
               />
             ))}
           </TimelineWrapper>
