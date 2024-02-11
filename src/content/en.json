@@ -131,5 +131,59 @@
           "description":
             "I studied at Open Lab, Newcastle University, the third largest biggest Human Computer Interaction research group. My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This was achieved through creating tech- nologies using a sensitive experience-centred design approach. To realise this, I created and deployed technologies such as: 3D printed devices, web applications, and mobile applications. I developed a strong skillset in development, research, design, independent learning, and project management. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences."
         }
+      ],
+      "publications": [
+        {
+          "title":
+            "Intersections in HCI, Design and Dementia: Inclusivity in Participatory Approaches",
+          "link": "https://dl.acm.org/citation.cfm?id=3319997",
+          "reference":
+            "Rens Brankaert, Gail Kenning, Daniel Welsh, Sarah Foley, James Hodge, and David Unbehaun. 2019. Intersections in HCI, Design and Dementia: Inclusivity in Participatory Approaches. In Companion Publication of the 2019 on Designing Interactive Systems Conference 2019 Companion (DIS '19 Companion). ACM, New York, NY, USA, 357-360. Workshop"
+        },
+        {
+          "title":
+            "Printer Pals: Experience-Centered Design to Support Agency for People with Dementia",
+          "link": "https://dl.acm.org/citation.cfm?id=3300634",
+          "reference":
+            "Foley, S., Welsh, D., Pantidi, N., Morrissey, K., Nappey, T., & McCarthy, J. (2019). Printer Pals: Experience-Centered Design to Support Agency for People with Dementia. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems - CHI '19. ACM, New York, NY, USA, Paper 404, 13 pages."
+        },
+        {
+          "title":
+            "Ticket to Talk: Supporting conversation between young people and people with dementia through digital media",
+          "link": "https://dl.acm.org/citation.cfm?id=3173949",
+          "reference":
+            "Welsh, D., Morrissey, K., Foley, S., McNaney, R., Salis, C., McCarthy, J., & Vines, J. (2018). Ticket to Talk: Supporting conversation between young people and people with dementia through digital media. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. New York, New York, USA: ACM Press."
+        },
+        {
+          "title":
+            "StammerApp: Designing a mobile application to support self-reflection and goal setting for people who stammer",
+          "link": "https://dl.acm.org/citation.cfm?id=3173841",
+          "reference":
+            "McNaney, R., Bull, C., Mackie, L., Dahman, F., Stringer, H., Richardson, D., & Welsh, D. (2018). StammerApp: Designing a mobile application to support self-reflection and goal setting for people who stammer. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. New York, New York, USA: ACM Press."
+        },
+        {
+          "title": "An intergenerational approach to dementia friendly communities",
+          "reference":
+            "Welsh, D. (2018). An intergenerational approach to dementia friendly communities. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. Position Paper"
+        },
+        {
+          "title":
+            "Curating Conversations: Designing personalised media to support intergenerational engagement in dementia care",
+          "reference":
+            "Welsh, D., Foley, S., & Morrissey, K. (2017). Curating Conversations: Designing personalised media to support intergenerational engagement in dementia care. In Dementia Lab '17. Design Event"
+        },
+        {
+          "title":
+            "DemYouth: Co-designing and enacting tools to support young people’s engagement with people with dementia",
+          "reference":
+            "McNaney, R., Vines, J., Mercer, J., Mexter, L., Welsh, D., & Young, T. (2017). DemYouth: Co-designing and enacting tools to support young people’s engagement with people with dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17 (pp. 1313–1325). New York, New York, USA: ACM Press",
+          "link": "https://dl.acm.org/citation.cfm?id=3025558"
+        },
+        {
+          "title":
+            "A Ticket to Talk: Scaffolding intergenerational interactions for dementia",
+          "reference":
+            "Welsh, D. (2017). A Ticket to Talk: Scaffolding intergenerational interactions for dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17. Position Paper"
+        }
       ]
 }
