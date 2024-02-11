@@ -28,6 +28,16 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     margin-top: 0;
   }
+
+  a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
 `;
 
 export default GlobalStyle;
