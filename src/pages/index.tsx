@@ -6,12 +6,14 @@ import GlobalStyle from "../components/GlobalStyle/GlobalStyle";
 import Timeline from "../components/Timeline/Timeline";
 import Publications from "../components/Publications/Publications";
 import { ThemeProvider } from "styled-components";
-import { darkTheme } from "../components/GlobalStyle/theme";
+import useDarkTheme from "../hooks/useDarkTheme";
 
 const IndexPage = () => {
+  const { theme } = useDarkTheme();
+
   return (
     <main>
-      <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <>
           <Header />
