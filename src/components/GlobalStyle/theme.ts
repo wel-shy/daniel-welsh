@@ -1,11 +1,17 @@
 import { DefaultTheme } from "styled-components";
 
+export enum ThemeLabel {
+  DARK,
+  LIGHT,
+}
+
 export const darkTheme: DefaultTheme = {
   background: "#0D1B2A",
   text: "#E0E1DD",
   shadow: "#1B263B",
   accent: "#415A77",
   white: "#E0E1DD",
+  label: ThemeLabel.DARK,
 };
 
 export const lightTheme: DefaultTheme = {
@@ -14,4 +20,5 @@ export const lightTheme: DefaultTheme = {
   accent: "#415A77",
   shadow: "#1B263B",
   white: "#E0E1DD",
+  label: ThemeLabel.LIGHT,
 };

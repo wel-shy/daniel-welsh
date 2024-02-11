@@ -1,7 +1,8 @@
 import React from "react";
 import { VscTextSize } from "react-icons/vsc";
-import { BiSun } from "react-icons/bi";
-import styled from "styled-components";
+import { BiSun, BiMoon } from "react-icons/bi";
+import styled, { DefaultTheme } from "styled-components";
+import { ThemeLabel } from "../GlobalStyle/theme";
 
 const Container = styled.div`
   font-size: 2em;
@@ -14,9 +15,18 @@ const Container = styled.div`
     display: flex;
     align-items: bottom;
   }
+
+  svg {
+    cursor: pointer;
+  }
 `;
 
-const Options = () => {
+interface OptionsProps {
+  setTheme: (theme: ThemeLabel) => void;
+  theme: DefaultTheme;
+}
+
+const Options = ({ setTheme, theme }: OptionsProps) => {
   return (
     <Container>
       <div className="font-size">
@@ -24,7 +34,11 @@ const Options = () => {
         <VscTextSize style={{ fontSize: "1.25em" }} />
       </div>
       <div>
-        <BiSun />
+        {theme.label === ThemeLabel.DARK ? (
+          <BiSun onClick={() => setTheme(ThemeLabel.LIGHT)} />
+        ) : (
+          <BiMoon onClick={() => setTheme(ThemeLabel.DARK)} />
+        )}
       </div>
     </Container>
   );

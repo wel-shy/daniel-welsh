@@ -10,14 +10,14 @@ import useDarkTheme from "../hooks/useDarkTheme";
 import Options from "../components/Options/Options";
 
 const IndexPage = () => {
-  const { theme } = useDarkTheme();
+  const { theme, setTheme } = useDarkTheme();
 
   return (
     <main>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <>
-          <Options />
+          <Options setTheme={setTheme} theme={theme} />
           <Header />
           <SkillsList />
           <Timeline />

@@ -1,5 +1,9 @@
 import { DefaultTheme } from "styled-components";
-import { darkTheme, lightTheme } from "../components/GlobalStyle/theme";
+import {
+  ThemeLabel,
+  darkTheme,
+  lightTheme,
+} from "../components/GlobalStyle/theme";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 const useThemeDetector = (setTheme: Dispatch<SetStateAction<DefaultTheme>>) => {
@@ -19,7 +23,12 @@ const useDarkTheme = () => {
   const [theme, setTheme] = useState<DefaultTheme>(darkTheme);
   useThemeDetector(setTheme);
 
-  return { theme };
+  return {
+    theme,
+    setTheme: (theme: ThemeLabel) => {
+      setTheme(theme === ThemeLabel.DARK ? darkTheme : lightTheme);
+    },
+  };
 };
 
 export default useDarkTheme;

@@ -1,4 +1,5 @@
 import "styled-components";
+import { ThemeLabel } from "../components/GlobalStyle/theme";
 
 declare module "styled-components" {
   export interface DefaultTheme {
@@ -7,5 +8,6 @@ declare module "styled-components" {
     accent: string;
     shadow: string;
     white: string;
+    label: ThemeLabel;
   }
 }
