@@ -13,13 +13,11 @@ const Role = styled.div<{ percent?: number }>`
 const Timeline = () => {
   const { getFormattedTimeline } = useTimeline();
   const timeline = getFormattedTimeline();
-  const [selectedItem, setSelectedItem] = useState<string>(
-    timeline[timeline.length - 1].id
-  );
+  const [selectedItem, setSelectedItem] = useState<string>(timeline[0].id);
 
   return (
     <div>
-      <h2>Work Experience</h2>
+      <h2>History</h2>
       <div>
         {timeline.map((role) => (
           <Role

@@ -15,7 +15,7 @@ const parseDataToRoles = (experiences: WorkExperience[]): Role[] =>
     from: new Date(exp.from),
     to: exp.to ? new Date(exp.to) : new Date(),
     subRoles: exp.subRoles ? parseDataToRoles(exp.subRoles) : undefined,
-    id: `${exp.institution}-${exp.from}`,
+    id: `${exp.institution}-${exp.from}-${exp.grade}`,
   }));
 
 const getPercent = (nom: number, dom: number) => (nom / dom) * 100;
@@ -34,11 +34,12 @@ const useTimeline = () => {
 
     const totalMonths = getMonthsSpan(firstStartDate, new Date());
 
-    return roles.map((role) => ({
-      ...role,
-
-      percent: getPercent(role.duration, totalMonths),
-    }));
+    return roles
+      .map((role) => ({
+        ...role,
+        percent: getPercent(role.duration, totalMonths),
+      }))
+      .sort((a, b) => b.from.getTime() - a.from.getTime());
   };
 
   return {
