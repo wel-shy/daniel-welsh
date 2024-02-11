@@ -55,7 +55,9 @@ const RoleDetails = ({ role }: { role: Role }) => {
     <>
       <Details role={role} />
       {role.subRoles &&
-        role.subRoles.map((role) => <Details role={role as any} isSubRole />)}
+        role.subRoles.map((role) => (
+          <Details key={role.id} role={role as any} isSubRole />
+        ))}
     </>
   );
 };

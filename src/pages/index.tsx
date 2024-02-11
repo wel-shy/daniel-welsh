@@ -5,6 +5,7 @@ import SkillsList from "../components/SkillsList/SkillsList";
 import Timeline from "../components/Timeline/Timeline";
 import Publications from "../components/Publications/Publications";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
+import Footer from "../components/Footer/Footer";
 
 const IndexPage = () => (
   <PageWrapper>
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <SkillsList />
       <Timeline />
       <Publications />
+      <Footer />
     </div>
   </PageWrapper>
 );
