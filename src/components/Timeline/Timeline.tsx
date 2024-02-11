@@ -11,21 +11,6 @@ const Role = styled.div<{ percent: number }>`
   flex-wrap: nowrap;
 `;
 
-const TitleAndIcon = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const TimelineIcon = styled.div`
-  height: 1em;
-  width: 1em;
-  background-color: white;
-  border-radius: 50%;
-  position: relative;
-  left: -1em;
-  box-shadow: 0 0 0 5px #1f1f1f;
-`;
-
 const RoleDetailsWrapper = styled.div`
   padding-left: 1em;
 `;
@@ -49,7 +34,6 @@ const Timeline = () => {
             onClick={() => setSelectedItem(role.institution)}
           >
             <Item role={role} />
-
             {role.institution === selectedItem && (
               <RoleDetailsWrapper>
                 <RoleDetails role={role} />
