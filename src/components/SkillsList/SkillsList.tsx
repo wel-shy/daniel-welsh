@@ -1,5 +1,4 @@
 import React from "react";
-import useIsSectionOpen from "../../hooks/useIsSectionOpen";
 import styled from "styled-components";
 import useData from "./useData";
 
@@ -23,24 +22,21 @@ const SkillsWrapper = styled.div`
 `;
 
 const SkillsList = () => {
-  const { isOpen, toggle } = useIsSectionOpen();
   const { secondarySkills, primarySkills } = useData();
 
   return (
     <div>
-      <h2 onClick={toggle}>Skills</h2>
-      {!isOpen ? null : (
-        <SkillsWrapper>
-          {primarySkills.map((skill) => (
-            <li className="primary-skill" key={skill}>
-              {skill}
-            </li>
-          ))}
-          {secondarySkills.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </SkillsWrapper>
-      )}
+      <h2>Skills</h2>
+      <SkillsWrapper>
+        {primarySkills.map((skill) => (
+          <li className="primary-skill" key={skill}>
+            {skill}
+          </li>
+        ))}
+        {secondarySkills.map((skill) => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </SkillsWrapper>
     </div>
   );
 };
