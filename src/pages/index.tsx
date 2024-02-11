@@ -4,7 +4,7 @@ import Header from "../components/Header/Header";
 import styled from "styled-components";
 import SkillsList from "../components/SkillsList/SkillsList";
 import GlobalStyle from "../components/GlobalStyle/GlobalStyle";
-import VerticalTimeline from "../components/VerticalTimeline/VerticalTimeline";
+import Timeline from "../components/Timeline/Timeline";
 
 const ContentWrapper = styled.div`
   border: solid white 1px;
@@ -23,7 +23,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <ContentWrapper>
         <Header />
         <SkillsList />
-        <VerticalTimeline />
+        <Timeline />
       </ContentWrapper>
     </main>
   );

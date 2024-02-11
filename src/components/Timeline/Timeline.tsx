@@ -29,7 +29,7 @@ const RoleDetailsWrapper = styled.div`
   padding-left: 1em;
 `;
 
-const VerticalTimeline = () => {
+const Timeline = () => {
   const { getFormattedTimeline } = useTimeline();
   const timeline = getFormattedTimeline();
   const [selectedItem, setSelectedItem] = useState<string>(
@@ -69,4 +69,4 @@ const VerticalTimeline = () => {
   );
 };
 
-export default VerticalTimeline;
+export default Timeline;
