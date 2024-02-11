@@ -30,6 +30,10 @@ const Container = styled.div`
     margin: 0;
   }
 
+  .location {
+    font-style: italic;
+  }
+
   .details {
     padding: 2em;
     grid-area: 1/1;
@@ -61,7 +65,7 @@ const Header = () => {
       <div className="details">
         <h1>Daniel Welsh</h1>
         <p>Fullstack Software Engineer</p>
-        <p>Berlin, Germany</p>
+        <p className="location">Berlin, Germany</p>
       </div>
     </Container>
   );

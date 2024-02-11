@@ -10,10 +10,16 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1000px;
     min-height: 100vh;
     padding: 2em;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
 
     @media (max-width: 768px) {
       max-width: 90vw;
     }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bitter', serif;
   }
 
   p {
