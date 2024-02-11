@@ -5,32 +5,42 @@ import styled from "styled-components";
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "profile.jpeg" }) {
+    file(relativePath: { eq: "hero.jpeg" }) {
       id
       relativePath
       relativeDirectory
       childImageSharp {
-        gatsbyImageData(width: 175)
+        gatsbyImageData(width: 1000, height: 500, layout: FULL_WIDTH)
       }
     }
   }
 `;
 
 const Container = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1em;
+  display: grid;
 
   img {
-    border-radius: 50%;
   }
 
   h1 {
-    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
   }
 
   p {
     margin: 0;
+  }
+
+  .details {
+    padding: 2em;
+    grid-area: 1/1;
+    position: relative;
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(123, 123, 444, 0) 100%
+    );
+    border-radius: 20px;
   }
 `;
 
@@ -43,7 +53,11 @@ const Header = () => {
 
   return (
     <Container>
-      <GatsbyImage image={gatsbyImageData} alt="Profile picture" />
+      <GatsbyImage
+        image={gatsbyImageData}
+        alt="Profile picture"
+        style={{ gridArea: "1/1", borderRadius: "20px" }}
+      />
       <div className="details">
         <h1>Daniel Welsh</h1>
         <p>Fullstack Software Engineer</p>
