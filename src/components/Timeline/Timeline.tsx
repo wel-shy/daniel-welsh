@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import useTimeline from "./useTimeline";
 import styled from "styled-components";
-import RoleDetails from "./RoleDetails";
 import Item from "./Item";
 
 const Role = styled.div<{ percent: number }>`
@@ -9,10 +8,6 @@ const Role = styled.div<{ percent: number }>`
   align-items: center;
   padding: 0.5em;
   flex-wrap: nowrap;
-`;
-
-const RoleDetailsWrapper = styled.div`
-  padding-left: 1em;
 `;
 
 const Timeline = () => {
@@ -33,12 +28,7 @@ const Timeline = () => {
             percent={role.percent}
             onClick={() => setSelectedItem(role.institution)}
           >
-            <Item role={role} />
-            {role.institution === selectedItem && (
-              <RoleDetailsWrapper>
-                <RoleDetails role={role} />
-              </RoleDetailsWrapper>
-            )}
+            <Item role={role} isActive={role.institution === selectedItem} />
           </Role>
         ))}
       </div>
