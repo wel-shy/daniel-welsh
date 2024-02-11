@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   }
 
   .dates {
-    margin-top: 0.5em;
+    margin-top: 0.75em;
     margin-bottom: 0.25em;
   }
 
@@ -40,7 +40,7 @@ const Details = ({ role, isSubRole }: { role: Role; isSubRole?: boolean }) => {
   return (
     <Wrapper>
       {isSubRole && <h4>{role.institution}</h4>}
-      <h4>{role.role}</h4>
+      {isSubRole && <h4>{role.role}</h4>}
       <div className="dates">
         {startDate} - {endDate}
       </div>

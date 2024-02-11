@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import useTimeline from "./useTimeline";
 import styled from "styled-components";
 import RoleDetails from "./RoleDetails";
+import Item from "./Item";
 
 const Role = styled.div<{ percent: number }>`
   border-left: 1px solid white;
@@ -47,15 +48,7 @@ const Timeline = () => {
             percent={role.percent}
             onClick={() => setSelectedItem(role.institution)}
           >
-            <TitleAndIcon>
-              <TimelineIcon />
-              <div>
-                <h3>
-                  {role.role}: {role.grade}
-                </h3>
-                <div>{role.institution}</div>
-              </div>
-            </TitleAndIcon>
+            <Item role={role} />
 
             {role.institution === selectedItem && (
               <RoleDetailsWrapper>
