@@ -1,6 +1,5 @@
 import { Role, WorkExperience } from "./types";
-import workExperienceData from "./workExperienceData";
-import educationData from "./educationData";
+import useTimelineData from "./useTimelineData";
 
 const getMonthsSpan = (startDate: Date, endDate: Date) => {
   const years = endDate.getFullYear() - startDate.getFullYear();
@@ -21,8 +20,10 @@ const parseDataToRoles = (experiences: WorkExperience[]): Role[] =>
 const getPercent = (nom: number, dom: number) => (nom / dom) * 100;
 
 const useTimeline = () => {
+  const { workExperience, education } = useTimelineData();
+
   const getFormattedTimeline = (): Role[] => {
-    const data = [...workExperienceData, ...educationData];
+    const data = [...workExperience, ...education];
     const roles = parseDataToRoles(data).map((role) => ({
       ...role,
       duration: getMonthsSpan(role.from, role.to),
