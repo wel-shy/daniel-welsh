@@ -1,195 +1,201 @@
 {
-    "primary_skills": [
-        "C#",
-        "TypeScript",
-        "JavaScript",
-        "Express.js",
-        ".Net",
-        "Machine Learning",
-        "SQL",
-        "MongoDB",
-        "Python",
-        "Java",
-        "Git",
-        "CI/CD",
-        "Vue.js",
-        "Linux",
-        "AWS",
-        "Unit Testing",
-        "Kubernetes",
-        "React",
-        "Ruby on Rails",
-        "Ruby",
-        "Docker",
-        "Terraform"
-      ],
-      "secondary_skills": [
-        "Analysis",
-        "Time Management",
-        "Adaptive",
-        "Information Dissemination",
-        "Problem Solving",
-        "Interaction Design",
-        "Qualitative Research",
-        "Agile",
-        "Scrum"
-      ],
-    "work_experience": [
+  "primary_skills": [
+    "C#",
+    "TypeScript",
+    "JavaScript",
+    "Express.js",
+    ".Net",
+    "Machine Learning",
+    "SQL",
+    "MongoDB",
+    "Python",
+    "Java",
+    "Git",
+    "CI/CD",
+    "Vue.js",
+    "Linux",
+    "AWS",
+    "Unit Testing",
+    "Kubernetes",
+    "React",
+    "Ruby on Rails",
+    "Ruby",
+    "Docker",
+    "Terraform"
+  ],
+  "secondary_skills": [
+    "Analysis",
+    "Time Management",
+    "Adaptive",
+    "Information Dissemination",
+    "Problem Solving",
+    "Interaction Design",
+    "Qualitative Research",
+    "Agile",
+    "Scrum"
+  ],
+  "work_experience": [
+    {
+      "role": "PhD Student",
+      "institution": "Newcastle University",
+      "from": "2017-09-01",
+      "to": "2019-04-01",
+      "location": "Newcastle upon Tyne, United Kingdom",
+      "description": "My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This is approached through creating technologies using a sensitive experience-centred design approach. To realise this, I have created and deployed technological artefacts using technologies such as: 3D printing, web applications, and developing mobile applications. As such I have developed a strong skillset in frontend and backend development as well as managing a project as a whole. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences.",
+      "sub_roles": [
         {
-          "role": "PhD Student",
-          "institution": "Newcastle University",
-          "from": "2017-09-01",
+          "role": "Research Software Engineer",
+          "institution": "Newcastle University / Northumbria University",
+          "from": "2017-01-01",
           "to": "2019-04-01",
           "location": "Newcastle upon Tyne, United Kingdom",
-          "description":
-            "My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This is approached through creating technologies using a sensitive experience-centred design approach. To realise this, I have created and deployed technological artefacts using technologies such as: 3D printing, web applications, and developing mobile applications. As such I have developed a strong skillset in frontend and backend development as well as managing a project as a whole. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences.",
-          "sub_roles": [
-            {
-              "role": "Research Software Engineer",
-              "institution": "Newcastle University / Northumbria University",
-              "from": "2017-01-01",
-              "to": "2019-04-01",
-              "location": "Newcastle upon Tyne, United Kingdom",
-              "description":
-                "During my PhD I have consulted and freelanced as a software engineer on a number of research projects. I have developed websites, created a web application for women’s rights activists, and helped create wearable technologies that help people in later life cope with death and grief. Between my undergraduate and master’s degree I also interned at Open Lab to develop a cross-platform mobile application, encouraging conversation between younger people and people with dementia. During this project, I lead the application design and development in a co-design process with younger carers of people with dementia. I have been the technological lead on most of these projects using technologies such as: Vue.js, Wordpress, Node.js, TypeScript, Nginx, Docker, MongoDB. Examples of my work can be found in the papers cited below where I developed the technologies they’re centred on."
-            }
-          ]
-        },
-        {
-          "role": "Backend Software Engineer",
-          "institution": "Qred",
-          "from": "2019-05-01",
-          "to": "2019-08-01",
-          "location": "Stockholm, Sweden",
-          "description":
-            "At Qred I work as a Backend Software Developer, helping to maintain and develop the company's core infrastructure. I help redesign and further develop Qred's back end to smoothly meet a rapidly growing customer base, using tools such as Java, C#, Kubernetes, and CI/CD."
-        },
-        {
-          "role": "Fullstack Software Engineer",
-          "institution": "Doctolib",
-          "from": "2022-04-01",
-          "location": "Berlin, Germany",
-          "description":
-            "As a software engineer at Doctolib, I specialize in Ruby on Rails, and React. My role involves spearheading projects focused on refactoring, maintaining, and modernizing critical components of the codebase. I actively collaborate with cross-functional teams, provide mentorship to fellow engineers, and take the lead on significant projects driving major product updates."
-        },
-        {
-          "role": "Fullstack Consultant Software Engineer",
-          "institution": "13|37",
-          "from": "2019-08-01",
-          "to": "2022-03-01",
-          "location": "Stockholm, Sweden",
-          "description":
-            "I worked at 13|37 as a Consultant Fullstack Software Engineer. I consulted on varied and challenging software projects across Stockholm. I predominately worked with JavaScript, Node, Express, and React to help clients achieve their technical needs, and using other technologies as necessary. I have worked with micro-service architectures both small and large teams - using CI/CD and terraform to manage projects. I mostly worked as a technical partner with clients, helping to identify, plan, and then achieve their software development needs.",
-          "sub_roles": [
-            {
-              "role": "Fullstack Software Engineer (Consultant)",
-              "institution": "Paradox Interactive",
-              "from": "2019-09-01",
-              "to": "2021-09-01",
-              "location": "Stockholm, Sweden",
-              "description": ""
-            },
-            {
-              "role": "Fullstack Software Engineer (Consultant)",
-              "institution": "Chroma",
-              "from": "2021-09-01",
-              "to": "2022-02-01",
-              "location": "Stockholm, Sweden",
-              "description": ""
-            }
-          ]
+          "description": "During my PhD I have consulted and freelanced as a software engineer on a number of research projects. I have developed websites, created a web application for women’s rights activists, and helped create wearable technologies that help people in later life cope with death and grief. Between my undergraduate and master’s degree I also interned at Open Lab to develop a cross-platform mobile application, encouraging conversation between younger people and people with dementia. During this project, I lead the application design and development in a co-design process with younger carers of people with dementia. I have been the technological lead on most of these projects using technologies such as: Vue.js, Wordpress, Node.js, TypeScript, Nginx, Docker, MongoDB. Examples of my work can be found in the papers cited below where I developed the technologies they’re centred on."
         }
-      ],
-      "education": [
-        {
-          "role": "BSc Computing Science",
-          "institution": "Newcastle University",
-          "grade": "First Class (Hons)",
-          "from": "2013-09-01",
-          "to": "2016-05-01",
-          "location": "Newcastle upon Tyne, United Kingdom",
-          "description":
-            "During my undergraduate degree, I learnt a diverse range of skills in computing science, including software design, web and app development, and human computer interaction. I used these skills to co-design a web application with older people. This system helped older people facing age related conditions share healthy recipes with other people who have similar dietary requirements. Furthermore, I learnt the fundamentals of software development practices, designing algorithms, system security, cryptography and fault tolerances."
-        },
-        {
-          "role": "MRes Digital Civics",
-          "institution": "Newcastle University",
-          "grade": "Distinction",
-          "from": "2016-09-01",
-          "to": "2017-08-01",
-          "location": "Newcastle upon Tyne, United Kingdom",
-          "description":
-            "This Masters focussed on developing technologies to aid social care. I conducted research into how technology can support intergenerational interactions between young people and people with dementia. As part of this I developed a mobile application called Ticket to Talk. I learnt to work closely with families and people with dementia in a user-centred design process, as well as care homes, and local charities to evaluate and improve the technology. ESRC and Newcastle University ran a full press release on the project, as well the UK’s Department for Business, Energy, and Industrial Strategy including the app in their latest industrial campaign. In I developed skills in developing ubiquitous technologies, peer programming, and mobile development."
-        },
-        {
-          "role": "PhD Digital Civics",
-          "institution": "Newcastle University",
-          "grade": "Incomplete",
-          "from": "2017-09-01",
-          "to": "2019-05-01",
-          "location": "Newcastle upon Tyne, United Kingdom",
-          "description":
-            "I studied at Open Lab, Newcastle University, the third largest biggest Human Computer Interaction research group. My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This was achieved through creating tech- nologies using a sensitive experience-centred design approach. To realise this, I created and deployed technologies such as: 3D printed devices, web applications, and mobile applications. I developed a strong skillset in development, research, design, independent learning, and project management. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences."
-        }
-      ],
-      "publications": [
-        {
-          "title":
-            "Intersections in HCI, Design and Dementia: Inclusivity in Participatory Approaches",
-          "link": "https://dl.acm.org/citation.cfm?id=3319997",
-          "reference":
-            "Rens Brankaert, Gail Kenning, Daniel Welsh, Sarah Foley, James Hodge, and David Unbehaun. 2019. Intersections in HCI, Design and Dementia: Inclusivity in Participatory Approaches. In Companion Publication of the 2019 on Designing Interactive Systems Conference 2019 Companion (DIS '19 Companion). ACM, New York, NY, USA, 357-360. Workshop"
-        },
-        {
-          "title":
-            "Printer Pals: Experience-Centered Design to Support Agency for People with Dementia",
-          "link": "https://dl.acm.org/citation.cfm?id=3300634",
-          "reference":
-            "Foley, S., Welsh, D., Pantidi, N., Morrissey, K., Nappey, T., & McCarthy, J. (2019). Printer Pals: Experience-Centered Design to Support Agency for People with Dementia. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems - CHI '19. ACM, New York, NY, USA, Paper 404, 13 pages."
-        },
-        {
-          "title":
-            "Ticket to Talk: Supporting conversation between young people and people with dementia through digital media",
-          "link": "https://dl.acm.org/citation.cfm?id=3173949",
-          "reference":
-            "Welsh, D., Morrissey, K., Foley, S., McNaney, R., Salis, C., McCarthy, J., & Vines, J. (2018). Ticket to Talk: Supporting conversation between young people and people with dementia through digital media. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. New York, New York, USA: ACM Press."
-        },
-        {
-          "title":
-            "StammerApp: Designing a mobile application to support self-reflection and goal setting for people who stammer",
-          "link": "https://dl.acm.org/citation.cfm?id=3173841",
-          "reference":
-            "McNaney, R., Bull, C., Mackie, L., Dahman, F., Stringer, H., Richardson, D., & Welsh, D. (2018). StammerApp: Designing a mobile application to support self-reflection and goal setting for people who stammer. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. New York, New York, USA: ACM Press."
-        },
-        {
-          "title": "An intergenerational approach to dementia friendly communities",
-          "reference":
-            "Welsh, D. (2018). An intergenerational approach to dementia friendly communities. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. Position Paper"
-        },
-        {
-          "title":
-            "Curating Conversations: Designing personalised media to support intergenerational engagement in dementia care",
-          "reference":
-            "Welsh, D., Foley, S., & Morrissey, K. (2017). Curating Conversations: Designing personalised media to support intergenerational engagement in dementia care. In Dementia Lab '17. Design Event"
-        },
-        {
-          "title":
-            "DemYouth: Co-designing and enacting tools to support young people’s engagement with people with dementia",
-          "reference":
-            "McNaney, R., Vines, J., Mercer, J., Mexter, L., Welsh, D., & Young, T. (2017). DemYouth: Co-designing and enacting tools to support young people’s engagement with people with dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17 (pp. 1313–1325). New York, New York, USA: ACM Press",
-          "link": "https://dl.acm.org/citation.cfm?id=3025558"
-        },
-        {
-          "title":
-            "A Ticket to Talk: Scaffolding intergenerational interactions for dementia",
-          "reference":
-            "Welsh, D. (2017). A Ticket to Talk: Scaffolding intergenerational interactions for dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17. Position Paper"
-        }
-      ],
-      "social_links": [
-        {"platform": "email", "link": "mailto:e@dwelsh.uk"},
-        {"platform": "linkedin", "link": "https://www.linkedin.com/in/daniel-welsh-914776150/"},
-        {"platform": "instagram", "link": "https://www.instagram.com/wel__shy/"},
-        {"platform": "github", "link": "https://github.com/wel-shy"}
       ]
+    },
+    {
+      "role": "Backend Software Engineer",
+      "institution": "Qred",
+      "from": "2019-05-01",
+      "to": "2019-08-01",
+      "location": "Stockholm, Sweden",
+      "description": "At Qred I work as a Backend Software Developer, helping to maintain and develop the company's core infrastructure. I help redesign and further develop Qred's back end to smoothly meet a rapidly growing customer base, using tools such as Java, C#, Kubernetes, and CI/CD."
+    },
+    {
+      "role": "Fullstack Software Engineer",
+      "institution": "Doctolib",
+      "from": "2022-04-01",
+      "to": "2024-10-31",
+      "location": "Berlin, Germany",
+      "description": "As a software engineer at Doctolib, I specialize in Ruby on Rails, and React. My role involves spearheading projects focused on refactoring, maintaining, and modernizing critical components of the codebase. I actively collaborate with cross-functional teams, provide mentorship to fellow engineers, and take the lead on significant projects driving major product updates."
+    },
+    {
+      "role": "Fullstack Consultant Software Engineer",
+      "institution": "13|37",
+      "from": "2019-08-01",
+      "to": "2022-03-01",
+      "location": "Stockholm, Sweden",
+      "description": "I worked at 13|37 as a Consultant Fullstack Software Engineer. I consulted on varied and challenging software projects across Stockholm. I predominately worked with JavaScript, Node, Express, and React to help clients achieve their technical needs, and using other technologies as necessary. I have worked with micro-service architectures both small and large teams - using CI/CD and terraform to manage projects. I mostly worked as a technical partner with clients, helping to identify, plan, and then achieve their software development needs.",
+      "sub_roles": [
+        {
+          "role": "Fullstack Software Engineer (Consultant)",
+          "institution": "Paradox Interactive",
+          "from": "2019-09-01",
+          "to": "2021-09-01",
+          "location": "Stockholm, Sweden",
+          "description": ""
+        },
+        {
+          "role": "Fullstack Software Engineer (Consultant)",
+          "institution": "Chroma",
+          "from": "2021-09-01",
+          "to": "2022-02-01",
+          "location": "Stockholm, Sweden",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "role": "Senior Fullstack Consultant Software Engineer (IC4)",
+      "institution": "TWAICE",
+      "from": "2024-11-01",
+      "to": "2022-03-01",
+      "location": "Berlin, Germany",
+      "description": "",
+      "sub_roles": [
+        {
+          "role": "Senior Fullstack Software Engineer (IC4)",
+          "institution": "Paradox Interactive",
+          "from": "2026-04-01",
+          "location": "Berlin, Germany",
+          "description": ""
+        },
+        {
+          "role": "Senior Fullstack Software Engineer (IC3)",
+          "institution": "Chroma",
+          "from": "2024-11-01",
+          "to": "2026-03-31",
+          "location": "Berlin, Germany",
+          "description": ""
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "role": "BSc Computing Science",
+      "institution": "Newcastle University",
+      "grade": "First Class (Hons)",
+      "from": "2013-09-01",
+      "to": "2016-05-01",
+      "location": "Newcastle upon Tyne, United Kingdom",
+      "description": "During my undergraduate degree, I learnt a diverse range of skills in computing science, including software design, web and app development, and human computer interaction. I used these skills to co-design a web application with older people. This system helped older people facing age related conditions share healthy recipes with other people who have similar dietary requirements. Furthermore, I learnt the fundamentals of software development practices, designing algorithms, system security, cryptography and fault tolerances."
+    },
+    {
+      "role": "MRes Digital Civics",
+      "institution": "Newcastle University",
+      "grade": "Distinction",
+      "from": "2016-09-01",
+      "to": "2017-08-01",
+      "location": "Newcastle upon Tyne, United Kingdom",
+      "description": "This Masters focussed on developing technologies to aid social care. I conducted research into how technology can support intergenerational interactions between young people and people with dementia. As part of this I developed a mobile application called Ticket to Talk. I learnt to work closely with families and people with dementia in a user-centred design process, as well as care homes, and local charities to evaluate and improve the technology. ESRC and Newcastle University ran a full press release on the project, as well the UK’s Department for Business, Energy, and Industrial Strategy including the app in their latest industrial campaign. In I developed skills in developing ubiquitous technologies, peer programming, and mobile development."
+    },
+    {
+      "role": "PhD Digital Civics",
+      "institution": "Newcastle University",
+      "grade": "Incomplete",
+      "from": "2017-09-01",
+      "to": "2019-05-01",
+      "location": "Newcastle upon Tyne, United Kingdom",
+      "description": "I studied at Open Lab, Newcastle University, the third largest biggest Human Computer Interaction research group. My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This was achieved through creating tech- nologies using a sensitive experience-centred design approach. To realise this, I created and deployed technologies such as: 3D printed devices, web applications, and mobile applications. I developed a strong skillset in development, research, design, independent learning, and project management. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Intersections in HCI, Design and Dementia: Inclusivity in Participatory Approaches",
+      "link": "https://dl.acm.org/citation.cfm?id=3319997",
+      "reference": "Rens Brankaert, Gail Kenning, Daniel Welsh, Sarah Foley, James Hodge, and David Unbehaun. 2019. Intersections in HCI, Design and Dementia: Inclusivity in Participatory Approaches. In Companion Publication of the 2019 on Designing Interactive Systems Conference 2019 Companion (DIS '19 Companion). ACM, New York, NY, USA, 357-360. Workshop"
+    },
+    {
+      "title": "Printer Pals: Experience-Centered Design to Support Agency for People with Dementia",
+      "link": "https://dl.acm.org/citation.cfm?id=3300634",
+      "reference": "Foley, S., Welsh, D., Pantidi, N., Morrissey, K., Nappey, T., & McCarthy, J. (2019). Printer Pals: Experience-Centered Design to Support Agency for People with Dementia. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems - CHI '19. ACM, New York, NY, USA, Paper 404, 13 pages."
+    },
+    {
+      "title": "Ticket to Talk: Supporting conversation between young people and people with dementia through digital media",
+      "link": "https://dl.acm.org/citation.cfm?id=3173949",
+      "reference": "Welsh, D., Morrissey, K., Foley, S., McNaney, R., Salis, C., McCarthy, J., & Vines, J. (2018). Ticket to Talk: Supporting conversation between young people and people with dementia through digital media. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. New York, New York, USA: ACM Press."
+    },
+    {
+      "title": "StammerApp: Designing a mobile application to support self-reflection and goal setting for people who stammer",
+      "link": "https://dl.acm.org/citation.cfm?id=3173841",
+      "reference": "McNaney, R., Bull, C., Mackie, L., Dahman, F., Stringer, H., Richardson, D., & Welsh, D. (2018). StammerApp: Designing a mobile application to support self-reflection and goal setting for people who stammer. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. New York, New York, USA: ACM Press."
+    },
+    {
+      "title": "An intergenerational approach to dementia friendly communities",
+      "reference": "Welsh, D. (2018). An intergenerational approach to dementia friendly communities. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems - CHI ’18. Position Paper"
+    },
+    {
+      "title": "Curating Conversations: Designing personalised media to support intergenerational engagement in dementia care",
+      "reference": "Welsh, D., Foley, S., & Morrissey, K. (2017). Curating Conversations: Designing personalised media to support intergenerational engagement in dementia care. In Dementia Lab '17. Design Event"
+    },
+    {
+      "title": "DemYouth: Co-designing and enacting tools to support young people’s engagement with people with dementia",
+      "reference": "McNaney, R., Vines, J., Mercer, J., Mexter, L., Welsh, D., & Young, T. (2017). DemYouth: Co-designing and enacting tools to support young people’s engagement with people with dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17 (pp. 1313–1325). New York, New York, USA: ACM Press",
+      "link": "https://dl.acm.org/citation.cfm?id=3025558"
+    },
+    {
+      "title": "A Ticket to Talk: Scaffolding intergenerational interactions for dementia",
+      "reference": "Welsh, D. (2017). A Ticket to Talk: Scaffolding intergenerational interactions for dementia. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI ’17. Position Paper"
+    }
+  ],
+  "social_links": [
+    { "platform": "email", "link": "mailto:e@dwelsh.uk" },
+    {
+      "platform": "linkedin",
+      "link": "https://www.linkedin.com/in/daniel-welsh-914776150/"
+    },
+    { "platform": "instagram", "link": "https://www.instagram.com/wel__shy/" },
+    { "platform": "github", "link": "https://github.com/wel-shy" }
+  ]
 }

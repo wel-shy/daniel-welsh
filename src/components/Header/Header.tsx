@@ -19,7 +19,7 @@ const Header = () => {
         <Title order={1} mb="0.5em" style={{ fontSize: "2.5em" }}>
           Daniel Welsh
         </Title>
-        <Text m={0}>Fullstack Software Engineer</Text>
+        <Text m={0}>Senior Fullstack Software Engineer</Text>
         <Text m={0} mb="1.5em" fs="italic">
           Berlin, Germany
         </Text>
