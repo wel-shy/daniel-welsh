@@ -1,0 +1,63 @@
+.tl-role {
+  border-left: 1px solid var(--app-text);
+  align-items: center;
+  padding: 0.5em;
+  flex-wrap: nowrap;
+}
+
+.tl-title-and-icon {
+  display: flex;
+  align-items: center;
+}
+
+.tl-icon {
+  background-color: var(--app-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--app-bg);
+  height: 1em;
+  left: -1em;
+  position: relative;
+  width: 1em;
+}
+
+.tl-item {
+  background-color: transparent;
+  border-radius: 20px;
+  border: solid 1px var(--app-accent);
+  color: var(--app-text);
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+}
+
+.tl-item:hover {
+  background-color: var(--app-accent);
+}
+
+.tl-item[data-active] {
+  background-color: var(--app-accent);
+  color: var(--app-white);
+}
+
+.tl-institution {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.tl-details h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+.tl-dates {
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+}
+
+.tl-location {
+  margin-bottom: 1em;
+}
+
+.tl-description {
+  margin-bottom: 2em;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { defaultFontSize } from "../components/GlobalStyle/theme";
 
+const defaultFontSize = 16;
 const STEP = 2;
 
 const useFontSize = () => {

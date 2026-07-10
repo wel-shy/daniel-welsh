@@ -1,63 +1,63 @@
 import React from "react";
 import { VscTextSize } from "react-icons/vsc";
 import { BiSun, BiMoon } from "react-icons/bi";
-import styled, { DefaultTheme } from "styled-components";
-import { ThemeLabel } from "../GlobalStyle/theme";
-
-const Container = styled.div`
-  font-size: 2em;
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  margin-bottom: 0.5em;
-  gap: 0.25em;
-
-  .font-size {
-    display: flex;
-    align-items: end;
-    gap: 0.25em;
-  }
-
-  svg {
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-  }
-`;
+import { Group, UnstyledButton, type MantineColorScheme } from "@mantine/core";
 
 interface OptionsProps {
-  setTheme: (theme: ThemeLabel) => void;
-  theme: DefaultTheme;
+  colorScheme: "light" | "dark";
+  setColorScheme: (value: MantineColorScheme) => void;
   increaseFontSize: () => void;
   decreaseFontSize: () => void;
 }
 
 const Options = ({
-  setTheme,
-  theme,
+  colorScheme,
+  setColorScheme,
   increaseFontSize,
   decreaseFontSize,
 }: OptionsProps) => {
   return (
-    <Container>
-      <div className="font-size">
-        <VscTextSize
-          style={{ fontSize: "0.75em" }}
+    <Group
+      justify="flex-end"
+      align="flex-end"
+      gap="0.25em"
+      mb="0.5em"
+      style={{ fontSize: "2em" }}
+    >
+      <Group align="flex-end" gap="0.25em">
+        <UnstyledButton
           onClick={decreaseFontSize}
-        />
-        <VscTextSize
-          style={{ fontSize: "1.25em" }}
+          aria-label="Decrease font size"
+          style={{ display: "flex", fontSize: "0.75em" }}
+        >
+          <VscTextSize />
+        </UnstyledButton>
+        <UnstyledButton
           onClick={increaseFontSize}
-        />
-      </div>
-      <div>
-        {theme.label === ThemeLabel.DARK ? (
-          <BiSun onClick={() => setTheme(ThemeLabel.LIGHT)} />
-        ) : (
-          <BiMoon onClick={() => setTheme(ThemeLabel.DARK)} />
-        )}
-      </div>
-    </Container>
+          aria-label="Increase font size"
+          style={{ display: "flex", fontSize: "1.25em" }}
+        >
+          <VscTextSize />
+        </UnstyledButton>
+      </Group>
+      {colorScheme === "dark" ? (
+        <UnstyledButton
+          onClick={() => setColorScheme("light")}
+          aria-label="Switch to light theme"
+          style={{ display: "flex" }}
+        >
+          <BiSun />
+        </UnstyledButton>
+      ) : (
+        <UnstyledButton
+          onClick={() => setColorScheme("dark")}
+          aria-label="Switch to dark theme"
+          style={{ display: "flex" }}
+        >
+          <BiMoon />
+        </UnstyledButton>
+      )}
+    </Group>
   );
 };
 

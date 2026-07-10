@@ -1,36 +1,33 @@
 import React from "react";
-import styled from "styled-components";
+import { Anchor, Box, Stack, Text, Title } from "@mantine/core";
 import usePublicationsData from "./usePublicationsData";
-
-const Wrapper = styled.div`
-  .reference {
-    font-style: italic;
-    margin-top: 0;
-  }
-
-  h4 {
-    margin-bottom: 0.5em;
-  }
-`;
 
 const Publications = () => {
   const { publications } = usePublicationsData();
 
   return (
-    <Wrapper>
-      <h2>Publications</h2>
-      <div>
+    <Box>
+      <Title order={2}>Publications</Title>
+      <Stack gap="2em">
         {publications.map((publication) => (
-          <div key={publication.title}>
-            <a href={publication.link} target="_blank">
-              <h4>{publication.title}</h4>
-            </a>
-
-            <p className="reference">{publication.reference}</p>
-          </div>
+          <Box key={publication.title}>
+            <Anchor
+              href={publication.link}
+              target="_blank"
+              c="var(--app-accent)"
+              underline="never"
+            >
+              <Title order={4} mb="0.5em">
+                {publication.title}
+              </Title>
+            </Anchor>
+            <Text fs="italic" c="var(--app-text)">
+              {publication.reference}
+            </Text>
+          </Box>
         ))}
-      </div>
-    </Wrapper>
+      </Stack>
+    </Box>
   );
 };
 

@@ -5,21 +5,8 @@ import {
   IoMail,
   IoLogoLinkedin,
 } from "react-icons/io5";
-import styled from "styled-components";
+import { Anchor, Group } from "@mantine/core";
 import useSocialLinksData, { SocialLink } from "./useSocialLinksData";
-
-const Container = styled.div`
-  font-size: 1.75em;
-  align-items: center;
-  display: flex;
-  gap: 0.25em;
-  transition: all ease 0.5s;
-
-  svg {
-    cursor: pointer;
-    color: ${({ theme }) => theme.white};
-  }
-`;
 
 enum SocialPlatforms {
   EMAIL = "email",
@@ -47,13 +34,23 @@ const SocialLinks = () => {
   const { socialLinks } = useSocialLinksData();
 
   return (
-    <Container>
+    <Group
+      align="center"
+      gap="0.25em"
+      style={{ fontSize: "1.75em", transition: "all ease 0.5s" }}
+    >
       {socialLinks.map((socialLink) => (
-        <a href={socialLink.link} target="_blank">
+        <Anchor
+          key={socialLink.link}
+          href={socialLink.link}
+          target="_blank"
+          c="var(--app-white)"
+          style={{ cursor: "pointer", display: "flex" }}
+        >
           {getIcon(socialLink)}
-        </a>
+        </Anchor>
       ))}
-    </Container>
+    </Group>
   );
 };
 

@@ -1,0 +1,45 @@
+/*
+ * Semantic design tokens, sourced from the Mantine theme (see src/theme.ts).
+ * Components reference these so they stay decoupled from the palette.
+ */
+:root {
+  --app-bg: var(--mantine-color-body);
+  --app-text: var(--mantine-color-text);
+  --app-accent: var(--mantine-color-accent-6);
+  --app-white: var(--mantine-color-white);
+  --app-shadow: #1b263b;
+}
+
+body {
+  padding: 2em;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 90vw;
+  }
+}
+
+.content {
+  margin: auto;
+  max-width: 1000px;
+  min-height: 100vh;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+a {
+  color: var(--app-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--app-text);
+}

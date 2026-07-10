@@ -1,11 +1,7 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import { useMantineColorScheme } from "@mantine/core";
+import React, { useEffect } from "react";
+import { useComputedColorScheme, useMantineColorScheme } from "@mantine/core";
 import useFontSize from "../../hooks/useFontSize";
-import useDarkTheme from "../../hooks/useDarkTheme";
-import GlobalStyle from "../GlobalStyle/GlobalStyle";
 import Options from "../Options/Options";
-import { ThemeLabel } from "../GlobalStyle/theme";
 
 interface PageWrapperProps {
   children: React.ReactNode;
@@ -13,28 +9,22 @@ interface PageWrapperProps {
 
 const PageWrapper = ({ children }: PageWrapperProps) => {
   const { fontSize, increaseFontSize, decreaseFontSize } = useFontSize();
-  const { theme, setTheme } = useDarkTheme({ fontSize });
   const { setColorScheme } = useMantineColorScheme();
+  const colorScheme = useComputedColorScheme("dark");
 
-  const handleSetTheme = (label: ThemeLabel) => {
-    setTheme(label);
-    setColorScheme(label === ThemeLabel.DARK ? "dark" : "light");
-  };
+  useEffect(() => {
+    document.documentElement.style.fontSize = `${fontSize}px`;
+  }, [fontSize]);
 
   return (
     <main>
-      <ThemeProvider theme={theme}>
-        <>
-          <GlobalStyle />
-          <Options
-            theme={theme}
-            setTheme={handleSetTheme}
-            increaseFontSize={increaseFontSize}
-            decreaseFontSize={decreaseFontSize}
-          />
-          {children}
-        </>
-      </ThemeProvider>
+      <Options
+        colorScheme={colorScheme}
+        setColorScheme={setColorScheme}
+        increaseFontSize={increaseFontSize}
+        decreaseFontSize={decreaseFontSize}
+      />
+      {children}
     </main>
   );
 };

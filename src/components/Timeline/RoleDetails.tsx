@@ -1,52 +1,22 @@
 import React from "react";
+import { Box, Text, Title } from "@mantine/core";
 import { Role } from "./types";
-import styled from "styled-components";
 import { format } from "date-fns/format";
-
-const Wrapper = styled.div`
-  & .role-header {
-    align-items: center;
-    display: flex;
-    margin-bottom: 0em;
-
-    @media (max-width: 768px) {
-      display: block;
-    }
-  }
-
-  .dates {
-    margin-top: 0.75em;
-    margin-bottom: 0.25em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-    margin-bottom: 0.25em;
-  }
-
-  .location {
-    margin-bottom: 1em;
-  }
-
-  .description {
-    margin-bottom: 2em;
-  }
-`;
 
 const Details = ({ role, isSubRole }: { role: Role; isSubRole?: boolean }) => {
   const startDate = format(role.from, "MMMM yyyy");
   const endDate = format(role.to, "MMMM yyyy");
 
   return (
-    <Wrapper>
-      {isSubRole && <h4>{role.institution}</h4>}
-      {isSubRole && <h4>{role.role}</h4>}
-      <div className="dates">
+    <Box className="tl-details">
+      {isSubRole && <Title order={4}>{role.institution}</Title>}
+      {isSubRole && <Title order={4}>{role.role}</Title>}
+      <Text className="tl-dates">
         {startDate} - {endDate}
-      </div>
-      <div className="location">{role.location}</div>
-      <div className="description">{role.description}</div>
-    </Wrapper>
+      </Text>
+      <Text className="tl-location">{role.location}</Text>
+      <Text className="tl-description">{role.description}</Text>
+    </Box>
   );
 };
 

@@ -1,14 +1,8 @@
 import React, { useState } from "react";
+import { Box, Title } from "@mantine/core";
 import useTimeline from "./useTimeline";
-import styled from "styled-components";
 import Item from "./Item";
-
-const Role = styled.div<{ percent?: number }>`
-  border-left: 1px solid ${({ theme }) => theme.text};
-  align-items: center;
-  padding: 0.5em;
-  flex-wrap: nowrap;
-`;
+import "./Timeline.css";
 
 const Timeline = () => {
   const { getFormattedTimeline } = useTimeline();
@@ -16,21 +10,20 @@ const Timeline = () => {
   const [selectedItem, setSelectedItem] = useState<string>(timeline[0].id);
 
   return (
-    <div>
-      <h2>History</h2>
-      <div>
+    <Box>
+      <Title order={2}>History</Title>
+      <Box>
         {timeline.map((role) => (
-          <Role
-            className="role"
+          <Box
+            className="tl-role"
             key={role.id}
-            percent={role.percent}
             onClick={() => setSelectedItem(role.id)}
           >
             <Item role={role} isActive={role.id === selectedItem} />
-          </Role>
+          </Box>
         ))}
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

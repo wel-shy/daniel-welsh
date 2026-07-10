@@ -1,42 +1,47 @@
 import React from "react";
-import styled from "styled-components";
+import { Badge, Group, Title } from "@mantine/core";
 import useData from "./useData";
-
-const SkillsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 1em;
-
-  li {
-    border: 1px solid ${({ theme }) => theme.text};
-    padding: 0.5em;
-    border-radius: 5px;
-  }
-
-  li.primary-skill {
-    font-weight: bold;
-    background-color: ${({ theme }) => theme.accent};
-    color: ${({ theme }) => theme.white};
-  }
-`;
 
 const SkillsList = () => {
   const { secondarySkills, primarySkills } = useData();
 
   return (
     <div>
-      <h2>Skills</h2>
-      <SkillsWrapper>
+      <Title order={2}>Skills</Title>
+      <Group gap="1em">
         {primarySkills.map((skill) => (
-          <li className="primary-skill" key={skill}>
+          <Badge
+            key={skill}
+            size="lg"
+            radius="sm"
+            tt="none"
+            fw={700}
+            style={{
+              backgroundColor: "var(--app-accent)",
+              color: "var(--app-white)",
+              border: "none",
+            }}
+          >
             {skill}
-          </li>
+          </Badge>
         ))}
         {secondarySkills.map((skill) => (
-          <li key={skill}>{skill}</li>
+          <Badge
+            key={skill}
+            size="lg"
+            radius="sm"
+            tt="none"
+            fw={400}
+            style={{
+              backgroundColor: "transparent",
+              color: "var(--app-text)",
+              border: "1px solid var(--app-text)",
+            }}
+          >
+            {skill}
+          </Badge>
         ))}
-      </SkillsWrapper>
+      </Group>
     </div>
   );
 };

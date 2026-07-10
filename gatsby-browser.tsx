@@ -1,13 +1,8 @@
 import React from "react";
-import { MantineProvider, createTheme } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
-
-const theme = createTheme({
-  fontFamily: "Inter, sans-serif",
-  headings: {
-    fontFamily: "Bitter, serif",
-  },
-});
+import "./src/global.css";
+import { theme } from "./src/theme";
 
 export const wrapRootElement = ({ element }: { element: React.ReactNode }) => (
   <MantineProvider theme={theme} defaultColorScheme="dark">
