@@ -44,7 +44,7 @@ const SocialLinks = () => {
           key={socialLink.link}
           href={socialLink.link}
           target="_blank"
-          c="var(--app-white)"
+          c="var(--app-text)"
           style={{ cursor: "pointer", display: "flex" }}
         >
           {getIcon(socialLink)}
