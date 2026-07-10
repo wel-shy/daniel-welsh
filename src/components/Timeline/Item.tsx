@@ -13,7 +13,7 @@ const Item = ({ role, isActive }: ItemProps) => {
 
   return (
     <Box className="tl-title-and-icon">
-      <Box className="tl-icon" />
+      <Text className="tl-icon">~</Text>
       <Box className="tl-item" data-active={isActive || undefined}>
         <Title order={3} mt={0} mb="0.25em">
           {displayString}

@@ -1,5 +1,4 @@
 .tl-role {
-  border-left: 1px solid var(--app-text);
   align-items: center;
   padding: 0.5em;
   flex-wrap: nowrap;
@@ -11,19 +10,17 @@
 }
 
 .tl-icon {
-  background-color: var(--app-accent);
-  border-radius: 50%;
-  box-shadow: 0 0 0 5px var(--app-bg);
-  height: 1em;
-  left: -1em;
-  position: relative;
-  width: 1em;
+  color: var(--app-accent);
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5em;
+  flex-shrink: 0;
+  padding-right: 0.5em;
 }
 
 .tl-item {
   background-color: transparent;
-  border-radius: 20px;
-  border: solid 1px var(--mantine-color-dimmed);
+  border-radius: 0;
+  border: dashed 1px var(--mantine-color-dimmed);
   color: var(--app-text);
   cursor: pointer;
   padding: 1em;
