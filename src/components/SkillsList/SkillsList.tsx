@@ -7,7 +7,9 @@ const SkillsList = () => {
 
   return (
     <div>
-      <Title order={2}>Skills</Title>
+      <Title order={2} mb="md">
+        Skills
+      </Title>
       <Group gap="1em">
         {primarySkills.map((skill) => (
           <Badge

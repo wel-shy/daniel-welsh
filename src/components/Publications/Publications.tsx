@@ -7,7 +7,9 @@ const Publications = () => {
 
   return (
     <Box>
-      <Title order={2}>Publications</Title>
+      <Title order={2} mb="md">
+        Publications
+      </Title>
       <Stack gap="2em">
         {publications.map((publication) => (
           <Box key={publication.title}>

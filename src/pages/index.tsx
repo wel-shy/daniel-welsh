@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
+import { Stack } from "@mantine/core";
 import Header from "../components/Header/Header";
 import SkillsList from "../components/SkillsList/SkillsList";
 import Timeline from "../components/Timeline/Timeline";
@@ -10,11 +11,13 @@ import Footer from "../components/Footer/Footer";
 const IndexPage = () => (
   <PageWrapper>
     <div className="content">
-      <Header />
-      <SkillsList />
-      <Timeline />
-      <Publications />
-      <Footer />
+      <Stack gap="xl">
+        <Header />
+        <SkillsList />
+        <Timeline />
+        <Publications />
+        <Footer />
+      </Stack>
     </div>
   </PageWrapper>
 );

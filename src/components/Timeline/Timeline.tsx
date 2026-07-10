@@ -11,7 +11,9 @@ const Timeline = () => {
 
   return (
     <Box>
-      <Title order={2}>History</Title>
+      <Title order={2} mb="md">
+        History
+      </Title>
       <Box>
         {timeline.map((role) => (
           <Box
