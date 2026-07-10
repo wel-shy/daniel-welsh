@@ -36,22 +36,12 @@
   ],
   "work_experience": [
     {
-      "role": "PhD Student",
-      "institution": "Newcastle University",
-      "from": "2017-09-01",
+      "role": "Research Software Engineer",
+      "institution": "Newcastle University / Northumbria University",
+      "from": "2017-01-01",
       "to": "2019-04-01",
       "location": "Newcastle upon Tyne, United Kingdom",
-      "description": "My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This is approached through creating technologies using a sensitive experience-centred design approach. To realise this, I have created and deployed technological artefacts using technologies such as: 3D printing, web applications, and developing mobile applications. As such I have developed a strong skillset in frontend and backend development as well as managing a project as a whole. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences.",
-      "sub_roles": [
-        {
-          "role": "Research Software Engineer",
-          "institution": "Newcastle University / Northumbria University",
-          "from": "2017-01-01",
-          "to": "2019-04-01",
-          "location": "Newcastle upon Tyne, United Kingdom",
-          "description": "During my PhD I have consulted and freelanced as a software engineer on a number of research projects. I have developed websites, created a web application for women’s rights activists, and helped create wearable technologies that help people in later life cope with death and grief. Between my undergraduate and master’s degree I also interned at Open Lab to develop a cross-platform mobile application, encouraging conversation between younger people and people with dementia. During this project, I lead the application design and development in a co-design process with younger carers of people with dementia. I have been the technological lead on most of these projects using technologies such as: Vue.js, Wordpress, Node.js, TypeScript, Nginx, Docker, MongoDB. Examples of my work can be found in the papers cited below where I developed the technologies they’re centred on."
-        }
-      ]
+      "description": "Alongside my PhD I consulted and freelanced as a software engineer on a number of research projects. I developed websites, created a web application for women’s rights activists, and helped create wearable technologies that help people in later life cope with death and grief. Between my undergraduate and master’s degree I also interned at Open Lab to develop a cross-platform mobile application, encouraging conversation between younger people and people with dementia. During this project, I led the application design and development in a co-design process with younger carers of people with dementia. I have been the technological lead on most of these projects using technologies such as: Vue.js, Wordpress, Node.js, TypeScript, Nginx, Docker, MongoDB. Examples of my work can be found in the papers cited below where I developed the technologies they’re centred on."
     },
     {
       "role": "Backend Software Engineer",
@@ -140,7 +130,7 @@
       "from": "2017-09-01",
       "to": "2019-05-01",
       "location": "Newcastle upon Tyne, United Kingdom",
-      "description": "I studied at Open Lab, Newcastle University, the third largest biggest Human Computer Interaction research group. My PhD thesis centred on supporting mental wellbeing in later life, through the presentation and use of media. This was achieved through creating tech- nologies using a sensitive experience-centred design approach. To realise this, I created and deployed technologies such as: 3D printed devices, web applications, and mobile applications. I developed a strong skillset in development, research, design, independent learning, and project management. As part of my PhD I have worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences."
+      "description": "I studied at Open Lab, Newcastle University, one of the largest Human Computer Interaction research groups in the world. My PhD thesis centred on supporting mental wellbeing in later life through the presentation and use of media, approached by creating technologies with a sensitive, experience-centred design method. To realise this, I created and deployed technological artefacts using technologies such as 3D printing, web applications, and mobile applications, developing a strong skillset spanning frontend and backend development, research, design, independent learning, and project management. As part of my PhD I worked with care homes in the UK and Ireland, became a member of the steering group of a local dementia charity, consulted with the Red Cross on their interaction design processes, collaborated across disciplines and institutions, and presented and published at prestigious conferences."
     }
   ],
   "publications": [
