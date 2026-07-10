@@ -41,7 +41,7 @@
       "from": "2017-01-01",
       "to": "2019-04-01",
       "location": "Newcastle upon Tyne, United Kingdom",
-      "description": "Alongside my PhD I consulted and freelanced as a software engineer on a number of research projects. I developed websites, created a web application for women’s rights activists, and helped create wearable technologies that help people in later life cope with death and grief. Between my undergraduate and master’s degree I also interned at Open Lab to develop a cross-platform mobile application, encouraging conversation between younger people and people with dementia. During this project, I led the application design and development in a co-design process with younger carers of people with dementia. I have been the technological lead on most of these projects using technologies such as: Vue.js, Wordpress, Node.js, TypeScript, Nginx, Docker, MongoDB. Examples of my work can be found in the papers cited below where I developed the technologies they’re centred on."
+      "description": "Alongside my PhD I consulted and freelanced as a software engineer on a number of research projects. I developed websites, built a web application for women’s rights activists, and helped create wearable technologies to help people in later life cope with death and grief. Between my undergraduate and master’s degrees I also interned at Open Lab, developing a cross-platform mobile application that encouraged conversation between younger people and people with dementia. On this project I led the application’s design and development through a co-design process with young carers of people with dementia. I was the technical lead on most of these projects, working with technologies such as Vue.js, WordPress, Node.js, TypeScript, Nginx, Docker, and MongoDB. Examples of my work can be found in the papers cited below, where I developed the technologies they centre on."
     },
     {
       "role": "Backend Software Engineer",
@@ -49,7 +49,7 @@
       "from": "2019-05-01",
       "to": "2019-08-01",
       "location": "Stockholm, Sweden",
-      "description": "At Qred I work as a Backend Software Developer, helping to maintain and develop the company's core infrastructure. I help redesign and further develop Qred's back end to smoothly meet a rapidly growing customer base, using tools such as Java, C#, Kubernetes, and CI/CD."
+      "description": "At Qred I worked as a backend software engineer, helping to maintain and develop the company's core infrastructure. I helped redesign and extend Qred's backend to meet the demands of a rapidly growing customer base, using tools such as Java, C#, Kubernetes, and CI/CD."
     },
     {
       "role": "Fullstack Software Engineer",
@@ -57,7 +57,7 @@
       "from": "2022-04-01",
       "to": "2024-10-31",
       "location": "Berlin, Germany",
-      "description": "As a software engineer at Doctolib, I specialize in Ruby on Rails, and React. My role involves spearheading projects focused on refactoring, maintaining, and modernizing critical components of the codebase. I actively collaborate with cross-functional teams, provide mentorship to fellow engineers, and take the lead on significant projects driving major product updates."
+      "description": "As a software engineer at Doctolib I specialised in Ruby on Rails and React. I spearheaded projects focused on refactoring, maintaining, and modernising critical components of the codebase. I collaborated closely with cross-functional teams, mentored fellow engineers, and led significant projects driving major product updates."
     },
     {
       "role": "Fullstack Consultant Software Engineer",
@@ -65,7 +65,7 @@
       "from": "2019-08-01",
       "to": "2022-03-01",
       "location": "Stockholm, Sweden",
-      "description": "I worked at 13|37 as a Consultant Fullstack Software Engineer. I consulted on varied and challenging software projects across Stockholm. I predominately worked with JavaScript, Node, Express, and React to help clients achieve their technical needs, and using other technologies as necessary. I have worked with micro-service architectures both small and large teams - using CI/CD and terraform to manage projects. I mostly worked as a technical partner with clients, helping to identify, plan, and then achieve their software development needs.",
+      "description": "At 13|37 I consulted on varied and challenging software projects across Stockholm. I predominantly worked with JavaScript, Node.js, Express, and React to meet clients' technical needs, adopting other technologies as necessary. I worked with microservice architectures in both small and large teams, using CI/CD and Terraform to manage projects. I acted as a technical partner to clients, helping them identify, plan, and deliver on their software development needs.",
       "sub_roles": [
         {
           "role": "Fullstack Software Engineer (Consultant)",
@@ -89,9 +89,8 @@
       "role": "Senior Fullstack Software Engineer (IC4)",
       "institution": "TWAICE",
       "from": "2024-11-01",
-      "to": "2022-03-01",
       "location": "Berlin, Germany",
-      "description": "At TWAICE I work within a team building software to provide insights into battery energy storage systems (BESS). I lead domain level initiatives such as shaping testing strategies and championing best practices around clean code and effective team processes. I also lead team level projects involving big data, using tools such as Databricks to handle very large datasets and surface meaningful insights into battery performance. My day to day work spans the full stack, working with FastAPI, Angular, and AWS to deliver reliable, scalable products.",
+      "description": "At TWAICE I work in a team building software that provides insights into battery energy storage systems (BESS). I lead domain-level initiatives, such as shaping testing strategies and championing best practices around clean code and effective team processes. I also lead team-level projects involving big data, using tools such as Databricks to handle very large datasets and surface meaningful insights into battery performance. My day-to-day work spans the full stack, using FastAPI, Angular, and AWS to deliver reliable, scalable products.",
       "sub_roles": [
         {
           "role": "Senior Fullstack Software Engineer (IC3)",
@@ -112,7 +111,7 @@
       "from": "2013-09-01",
       "to": "2016-05-01",
       "location": "Newcastle upon Tyne, United Kingdom",
-      "description": "During my undergraduate degree, I learnt a diverse range of skills in computing science, including software design, web and app development, and human computer interaction. I used these skills to co-design a web application with older people. This system helped older people facing age related conditions share healthy recipes with other people who have similar dietary requirements. Furthermore, I learnt the fundamentals of software development practices, designing algorithms, system security, cryptography and fault tolerances."
+      "description": "During my undergraduate degree I learnt a diverse range of skills in computing science, including software design, web and app development, and human-computer interaction. I used these skills to co-design a web application with older people, helping those facing age-related conditions share healthy recipes with others who have similar dietary requirements. I also learnt the fundamentals of software development practices, algorithm design, system security, cryptography, and fault tolerance."
     },
     {
       "role": "MRes Digital Civics",
@@ -121,7 +120,7 @@
       "from": "2016-09-01",
       "to": "2017-08-01",
       "location": "Newcastle upon Tyne, United Kingdom",
-      "description": "This Masters focussed on developing technologies to aid social care. I conducted research into how technology can support intergenerational interactions between young people and people with dementia. As part of this I developed a mobile application called Ticket to Talk. I learnt to work closely with families and people with dementia in a user-centred design process, as well as care homes, and local charities to evaluate and improve the technology. ESRC and Newcastle University ran a full press release on the project, as well the UK’s Department for Business, Energy, and Industrial Strategy including the app in their latest industrial campaign. In I developed skills in developing ubiquitous technologies, peer programming, and mobile development."
+      "description": "My master’s focused on developing technologies to aid social care. I conducted research into how technology can support intergenerational interactions between young people and people with dementia, developing a mobile application called Ticket to Talk. I worked closely with families and people with dementia in a user-centred design process, alongside care homes and local charities, to evaluate and improve the technology. The ESRC and Newcastle University ran a full press release on the project, and the UK’s Department for Business, Energy, and Industrial Strategy featured the app in their industrial campaign. Through this I developed skills in building ubiquitous technologies, peer programming, and mobile development."
     },
     {
       "role": "PhD Digital Civics",

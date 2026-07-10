@@ -12,7 +12,7 @@ interface ItemProps {
 const Item = ({ role, isActive }: ItemProps) => {
   const displayString = role.grade ? `${role.role}: ${role.grade}` : role.role;
   const fromStr = format(role.from, "yyyy-MM");
-  const toStr = format(role.to, "yyyy-MM");
+  const toStr = role.to ? format(role.to, "yyyy-MM") : "Current";
 
   return (
     <Box className="tl-title-and-icon">

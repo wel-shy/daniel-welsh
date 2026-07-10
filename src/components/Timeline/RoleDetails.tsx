@@ -13,7 +13,7 @@ const Details = ({
   showInstitution?: boolean;
 }) => {
   const fromStr = format(role.from, "yyyy-MM");
-  const toStr = format(role.to, "yyyy-MM");
+  const toStr = role.to ? format(role.to, "yyyy-MM") : "Current";
 
   return (
     <Box className="tl-details">

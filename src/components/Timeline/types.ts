@@ -14,5 +14,5 @@ export type Role = Omit<WorkExperience, "from" | "to" | "subRoles"> & {
   id: string;
   percent?: number;
   subRoles?: Role[];
-  to: Date;
+  to?: Date;
 };

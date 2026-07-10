@@ -12,7 +12,7 @@ const parseDataToRoles = (experiences: WorkExperience[]): Role[] =>
   experiences.map((exp) => ({
     ...exp,
     from: new Date(exp.from),
-    to: exp.to ? new Date(exp.to) : new Date(),
+    to: exp.to ? new Date(exp.to) : undefined,
     subRoles: exp.sub_roles ? parseDataToRoles(exp.sub_roles) : undefined,
     id: `${exp.institution}-${exp.from}-${exp.grade}`,
   }));
@@ -26,7 +26,7 @@ const useTimeline = () => {
     const data = [...workExperience, ...education];
     const roles = parseDataToRoles(data).map((role) => ({
       ...role,
-      duration: getMonthsSpan(role.from, role.to),
+      duration: getMonthsSpan(role.from, role.to ?? new Date()),
     }));
 
     const [{ from: firstStartDate }] = roles.sort(
