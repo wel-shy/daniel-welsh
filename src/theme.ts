@@ -32,9 +32,9 @@ const dark: MantineColorsTuple = [
 ];
 
 export const theme = createTheme({
-  fontFamily: "Inter, sans-serif",
+  fontFamily: "Domine, serif",
   headings: {
-    fontFamily: "Bitter, serif",
+    fontFamily: "'DM Mono', monospace",
   },
   primaryColor: "accent",
   // Keep the accent identical in light and dark, matching the original design.
