@@ -1,6 +1,6 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Box, Text, Title } from "@mantine/core";
+import { Box, Flex, Text, Title } from "@mantine/core";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import useHeaderData from "./useHeaderData";
 
@@ -8,43 +8,42 @@ const Header = () => {
   const { imageData } = useHeaderData();
 
   return (
-    <Box
-      style={{
-        display: "grid",
-        boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.6)",
-        borderRadius: "15px",
-      }}
+    <Flex
+      direction={{ base: "column-reverse", sm: "row" }}
+      justify="space-between"
+      align="center"
+      gap="xl"
     >
-      <GatsbyImage
-        image={imageData}
-        alt="Profile picture"
-        style={{ gridArea: "1/1", borderRadius: "15px" }}
-      />
-      <Box
-        p="2em"
-        style={{
-          gridArea: "1/1",
-          position: "relative",
-          backgroundImage:
-            "linear-gradient(135deg, var(--app-bg) 3%, rgba(255, 255, 255, 0) 78%, var(--app-bg) 100%)",
-          borderRadius: "15px",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Box style={{ flex: 1 }}>
-          <Title order={1} mb="0.5em" style={{ fontSize: "2.5em" }}>
-            Daniel Welsh
-          </Title>
-          <Text m={0}>Fullstack Software Engineer</Text>
-          <Text m={0} fs="italic">
-            Berlin, Germany
-          </Text>
-        </Box>
-
+      {/* Left: basic information */}
+      <Box style={{ flex: 1 }}>
+        <Title order={1} mb="0.5em" style={{ fontSize: "2.5em" }}>
+          Daniel Welsh
+        </Title>
+        <Text m={0}>Fullstack Software Engineer</Text>
+        <Text m={0} mb="1.5em" fs="italic">
+          Berlin, Germany
+        </Text>
         <SocialLinks />
       </Box>
-    </Box>
+
+      {/* Right: profile image styled as a polaroid pasted onto the page */}
+      <Box
+        style={{
+          backgroundColor: "#fff",
+          padding: "12px 12px 48px",
+          boxShadow: "0 12px 24px rgba(0, 0, 0, 0.45)",
+          transform: "rotate(3deg)",
+          borderRadius: "2px",
+          flexShrink: 0,
+        }}
+      >
+        <GatsbyImage
+          image={imageData}
+          alt="Daniel Welsh"
+          style={{ display: "block" }}
+        />
+      </Box>
+    </Flex>
   );
 };
 

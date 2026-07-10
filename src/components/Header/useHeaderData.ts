@@ -2,12 +2,12 @@ import { graphql, useStaticQuery } from "gatsby";
 
 const query = graphql`
   query {
-    file(relativePath: { eq: "hero.jpeg" }) {
+    file(relativePath: { eq: "profile.jpeg" }) {
       id
       relativePath
       relativeDirectory
       childImageSharp {
-        gatsbyImageData(width: 1000, height: 500, layout: FULL_WIDTH)
+        gatsbyImageData(width: 320, height: 320, layout: CONSTRAINED)
       }
     }
   }
