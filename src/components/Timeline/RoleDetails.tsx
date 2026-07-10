@@ -9,12 +9,12 @@ const Details = ({ role, isSubRole }: { role: Role; isSubRole?: boolean }) => {
 
   return (
     <Box className="tl-details">
-      {isSubRole && <Title order={4}>{role.institution}</Title>}
       {isSubRole && <Title order={4}>{role.role}</Title>}
+      {isSubRole && <Text c="dimmed">{role.institution}</Text>}
       <Text className="tl-dates">
         {startDate} - {endDate}
       </Text>
-      <Text className="tl-location">{role.location}</Text>
+      {!isSubRole && <Text className="tl-location">{role.location}</Text>}
       <Text className="tl-description">{role.description}</Text>
     </Box>
   );
