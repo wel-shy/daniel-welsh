@@ -17,5 +17,6 @@ export const onRenderBody = ({
 }) => {
   setHeadComponents([
     <ColorSchemeScript key="color-scheme-script" defaultColorScheme="dark" />,
+    <link key="favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />,
   ]);
 };
