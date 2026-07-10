@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
-import { Stack } from "@mantine/core";
+import { Divider, Stack } from "@mantine/core";
 import Header from "../components/Header/Header";
 import SkillsList from "../components/SkillsList/SkillsList";
 import Timeline from "../components/Timeline/Timeline";
@@ -13,8 +13,11 @@ const IndexPage = () => (
     <div className="content">
       <Stack gap="xl">
         <Header />
+        <Divider />
         <SkillsList />
+        <Divider />
         <Timeline />
+        <Divider />
         <Publications />
         <Footer />
       </Stack>
