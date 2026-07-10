@@ -1,9 +1,11 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import { useMantineColorScheme } from "@mantine/core";
 import useFontSize from "../../hooks/useFontSize";
 import useDarkTheme from "../../hooks/useDarkTheme";
 import GlobalStyle from "../GlobalStyle/GlobalStyle";
 import Options from "../Options/Options";
+import { ThemeLabel } from "../GlobalStyle/theme";
 
 interface PageWrapperProps {
   children: React.ReactNode;
@@ -12,6 +14,13 @@ interface PageWrapperProps {
 const PageWrapper = ({ children }: PageWrapperProps) => {
   const { fontSize, increaseFontSize, decreaseFontSize } = useFontSize();
   const { theme, setTheme } = useDarkTheme({ fontSize });
+  const { setColorScheme } = useMantineColorScheme();
+
+  const handleSetTheme = (label: ThemeLabel) => {
+    setTheme(label);
+    setColorScheme(label === ThemeLabel.DARK ? "dark" : "light");
+  };
+
   return (
     <main>
       <ThemeProvider theme={theme}>
@@ -19,7 +28,7 @@ const PageWrapper = ({ children }: PageWrapperProps) => {
           <GlobalStyle />
           <Options
             theme={theme}
-            setTheme={setTheme}
+            setTheme={handleSetTheme}
             increaseFontSize={increaseFontSize}
             decreaseFontSize={decreaseFontSize}
           />
