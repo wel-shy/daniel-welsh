@@ -91,11 +91,11 @@
       "from": "2024-11-01",
       "to": "2022-03-01",
       "location": "Berlin, Germany",
-      "description": "",
+      "description": "At TWAICE I work within a team building software to provide insights into battery energy storage systems (BESS). I lead domain level initiatives such as shaping testing strategies and championing best practices around clean code and effective team processes. I also lead team level projects involving big data, using tools such as Databricks to handle very large datasets and surface meaningful insights into battery performance. My day to day work spans the full stack, working with FastAPI, Angular, and AWS to deliver reliable, scalable products.",
       "sub_roles": [
         {
           "role": "Senior Fullstack Software Engineer (IC3)",
-          "institution": "Chroma",
+          "institution": "TWAICE",
           "from": "2024-11-01",
           "to": "2026-03-31",
           "location": "Berlin, Germany",

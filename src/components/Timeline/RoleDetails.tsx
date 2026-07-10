@@ -1,12 +1,29 @@
 import React from "react";
 import { Box, Text, Title } from "@mantine/core";
+import { format } from "date-fns/format";
 import { Role } from "./types";
 
-const Details = ({ role, isSubRole }: { role: Role; isSubRole?: boolean }) => {
+const Details = ({
+  role,
+  isSubRole,
+  showInstitution,
+}: {
+  role: Role;
+  isSubRole?: boolean;
+  showInstitution?: boolean;
+}) => {
+  const fromStr = format(role.from, "yyyy-MM");
+  const toStr = format(role.to, "yyyy-MM");
+
   return (
     <Box className="tl-details">
       {isSubRole && <Title order={4}>{role.role}</Title>}
-      {isSubRole && <Text c="dimmed">{role.institution}</Text>}
+      {isSubRole && (
+        <Text className="tl-institution" ff="'DM Mono', monospace">
+          {showInstitution && `@ ${role.institution} - `}
+          {fromStr} -&gt; {toStr}
+        </Text>
+      )}
       {!isSubRole && (
         <Text className="tl-location" ff="'DM Mono', monospace">
           {role.location}
@@ -22,8 +39,13 @@ const RoleDetails = ({ role }: { role: Role }) => {
     <>
       <Details role={role} />
       {role.subRoles &&
-        role.subRoles.map((role) => (
-          <Details key={role.id} role={role as any} isSubRole />
+        role.subRoles.map((subRole) => (
+          <Details
+            key={subRole.id}
+            role={subRole as any}
+            isSubRole
+            showInstitution={subRole.institution !== role.institution}
+          />
         ))}
     </>
   );
