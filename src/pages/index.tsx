@@ -7,6 +7,7 @@ import Timeline from "../components/Timeline/Timeline";
 import Publications from "../components/Publications/Publications";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import Footer from "../components/Footer/Footer";
+import Seo from "../components/Seo/Seo";
 
 const IndexPage = () => (
   <PageWrapper>
@@ -27,4 +28,4 @@ const IndexPage = () => (
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Daniel Welsh</title>;
+export const Head: HeadFC = () => <Seo pathname="/" />;

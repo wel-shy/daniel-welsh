@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link, HeadFC, PageProps } from "gatsby";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
+import Seo from "../components/Seo/Seo";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
@@ -19,4 +20,6 @@ const NotFoundPage: React.FC<PageProps> = () => {
 
 export default NotFoundPage;
 
-export const Head: HeadFC = () => <title>Not found</title>;
+export const Head: HeadFC = () => (
+  <Seo title="Page not found" pathname="/404" noindex />
+);

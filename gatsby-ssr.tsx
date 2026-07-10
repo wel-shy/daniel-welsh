@@ -12,9 +12,12 @@ export const wrapRootElement = ({ element }: { element: React.ReactNode }) => (
 
 export const onRenderBody = ({
   setHeadComponents,
+  setHtmlAttributes,
 }: {
   setHeadComponents: (components: React.ReactNode[]) => void;
+  setHtmlAttributes: (attrs: Record<string, string>) => void;
 }) => {
+  setHtmlAttributes({ lang: "en" });
   setHeadComponents([
     <ColorSchemeScript key="color-scheme-script" defaultColorScheme="dark" />,
     <link key="favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />,

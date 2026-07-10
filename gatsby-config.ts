@@ -4,7 +4,18 @@ import path from "path";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Daniel Welsh`,
-    siteUrl: `https://www.yourdomain.tld`,
+    titleTemplate: `%s · Daniel Welsh`,
+    description: `Daniel Welsh is a Senior Fullstack Software Engineer based in Berlin, working across TypeScript, Python, React, Angular, and AWS. Explore his experience, skills, and research publications in HCI and software engineering.`,
+    siteUrl: `https://welshy.net`,
+    author: `Daniel Welsh`,
+    jobTitle: `Senior Fullstack Software Engineer`,
+    location: `Berlin, Germany`,
+    image: `/og-image.jpg`,
+    social: [
+      `https://www.linkedin.com/in/daniel-welsh-914776150/`,
+      `https://github.com/wel-shy`,
+      `https://www.instagram.com/wel__shy/`,
+    ],
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
