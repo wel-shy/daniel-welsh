@@ -58,3 +58,14 @@
 .tl-description {
   margin-bottom: 2em;
 }
+
+@media (max-width: 768px) {
+  .tl-icon {
+    font-size: 1em;
+    padding-right: 0.25em;
+  }
+
+  .tl-item {
+    padding: 0.75em;
+  }
+}
