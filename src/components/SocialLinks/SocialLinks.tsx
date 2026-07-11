@@ -15,16 +15,18 @@ enum SocialPlatforms {
   GITHUB = "github",
 }
 
+const ICON_SIZE = 24;
+
 const getIcon = (socialLink: SocialLink) => {
   switch (socialLink.platform) {
     case SocialPlatforms.EMAIL:
-      return <IoMail />;
+      return <IoMail size={ICON_SIZE} />;
     case SocialPlatforms.GITHUB:
-      return <IoLogoGithub />;
+      return <IoLogoGithub size={ICON_SIZE} />;
     case SocialPlatforms.INSTAGRAM:
-      return <IoLogoInstagram />;
+      return <IoLogoInstagram size={ICON_SIZE} />;
     case SocialPlatforms.LINKEDIN:
-      return <IoLogoLinkedin />;
+      return <IoLogoLinkedin size={ICON_SIZE} />;
     default:
       return null;
   }
@@ -34,11 +36,7 @@ const SocialLinks = () => {
   const { socialLinks } = useSocialLinksData();
 
   return (
-    <Group
-      align="center"
-      gap="0.25em"
-      style={{ fontSize: "1.75em", transition: "all ease 0.5s" }}
-    >
+    <Group align="center" gap="0.25em" style={{ transition: "all ease 0.5s" }}>
       {socialLinks.map((socialLink) => (
         <Anchor
           key={socialLink.link}

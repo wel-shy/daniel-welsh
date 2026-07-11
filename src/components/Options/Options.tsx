@@ -2,6 +2,8 @@ import React from "react";
 import { BiSun, BiMoon } from "react-icons/bi";
 import { Group, UnstyledButton, type MantineColorScheme } from "@mantine/core";
 
+const ICON_SIZE = 24;
+
 interface OptionsProps {
   colorScheme: "light" | "dark";
   setColorScheme: (value: MantineColorScheme) => void;
@@ -9,20 +11,14 @@ interface OptionsProps {
 
 const Options = ({ colorScheme, setColorScheme }: OptionsProps) => {
   return (
-    <Group
-      justify="flex-end"
-      align="center"
-      gap="0.25em"
-      mb="0.5em"
-      style={{ fontSize: "2em" }}
-    >
+    <Group justify="flex-end" align="center" gap="0.25em" mb="0.5em">
       {colorScheme === "dark" ? (
         <UnstyledButton
           onClick={() => setColorScheme("light")}
           aria-label="Switch to light theme"
           style={{ display: "flex" }}
         >
-          <BiSun />
+          <BiSun size={ICON_SIZE} />
         </UnstyledButton>
       ) : (
         <UnstyledButton
@@ -30,7 +26,7 @@ const Options = ({ colorScheme, setColorScheme }: OptionsProps) => {
           aria-label="Switch to dark theme"
           style={{ display: "flex" }}
         >
-          <BiMoon />
+          <BiMoon size={ICON_SIZE} />
         </UnstyledButton>
       )}
     </Group>
