@@ -1,19 +1,15 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Box, Flex, Text, Title } from "@mantine/core";
+import { Box, Text, Title } from "@mantine/core";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import useHeaderData from "./useHeaderData";
+import * as classes from "./Header.module.css";
 
 const Header = () => {
   const { imageData } = useHeaderData();
 
   return (
-    <Flex
-      direction={{ base: "column-reverse", sm: "row" }}
-      justify="space-between"
-      align="center"
-      gap="xl"
-    >
+    <div className={classes.header}>
       {/* Left: basic information */}
       <Box style={{ flex: 1 }}>
         <Title order={1} mb="0.5em" style={{ fontSize: "2.5em" }}>
@@ -43,7 +39,7 @@ const Header = () => {
           style={{ display: "block" }}
         />
       </Box>
-    </Flex>
+    </div>
   );
 };
 

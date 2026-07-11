@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, SimpleGrid, Title } from "@mantine/core";
+import { Box, Title } from "@mantine/core";
 import useData from "./useData";
+import * as classes from "./SkillsList.module.css";
 
 // Deterministic 32-bit hash so the generated "file" metadata is stable between
 // SSR and client render (avoids hydration mismatches).
@@ -120,14 +121,14 @@ const SkillsList = () => {
       <Title order={2} mb="md">
         Skills
       </Title>
-      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg">
+      <div className={classes.grid}>
         <Listing path="skills/technical" skills={primarySkills} executable />
         <Listing
           path="skills/product"
           skills={secondarySkills}
           executable={false}
         />
-      </SimpleGrid>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--mantine-spacing-xl);
+
+  @media (min-width: $mantine-breakpoint-sm) {
+    flex-direction: row;
+  }
+}
