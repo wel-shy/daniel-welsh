@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <Box component="footer">
       <Divider my="md" />
-      <Text mb="2em">&copy; Daniel Welsh - {new Date().getFullYear()}</Text>
       <SocialLinks />
+      <Text my="2em">&copy; Daniel Welsh - {new Date().getFullYear()}</Text>
     </Box>
   );
 };
