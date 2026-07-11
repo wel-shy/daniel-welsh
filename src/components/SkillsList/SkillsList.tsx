@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Title } from "@mantine/core";
+import { Box, SimpleGrid, Title } from "@mantine/core";
 import useData from "./useData";
 
 // Deterministic 32-bit hash so the generated "file" metadata is stable between
@@ -52,29 +52,62 @@ const Listing = ({ path, skills, executable }: ListingProps) => {
         <span style={{ color: "var(--app-accent)" }}>~ ❯</span> ls -la {path}
       </div>
       <div style={dim}>total {total}</div>
-      <div
+
+      <Box
+        visibleFrom="sm"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, max-content) 1fr",
           columnGap: "1ch",
-          whiteSpace: "nowrap",
         }}
       >
-        {[".", ".."].map((dir) => (
+        {[".", ".."].map((dir, i) => (
           <React.Fragment key={dir}>
-            <span style={dim}>drwxr-xr-x</span>
-            <span style={{ ...dim, textAlign: "right" }}>-</span>
-            <span style={dim}>{dir}</span>
+            <span style={{ ...dim, gridColumn: 1, gridRow: i + 1 }}>
+              drwxr-xr-x
+            </span>
+            <span
+              style={{ ...dim, textAlign: "right", gridColumn: 2, gridRow: i + 1 }}
+            >
+              -
+            </span>
+            <span style={{ ...dim, gridColumn: 3, gridRow: i + 1 }}>{dir}</span>
           </React.Fragment>
         ))}
-        {entries.map((entry) => (
+        {entries.map((entry, i) => (
           <React.Fragment key={entry.name}>
-            <span style={dim}>{entry.perms}</span>
-            <span style={{ ...dim, textAlign: "right" }}>{entry.size}</span>
-            <span style={{ color: "var(--app-text)" }}>{entry.name}</span>
+            <span style={{ ...dim, gridColumn: 1, gridRow: i + 3 }}>
+              {entry.perms}
+            </span>
+            <span
+              style={{ ...dim, textAlign: "right", gridColumn: 2, gridRow: i + 3 }}
+            >
+              {entry.size}
+            </span>
+            <span
+              style={{
+                color: "var(--app-text)",
+                whiteSpace: "nowrap",
+                gridColumn: 3,
+                gridRow: i + 3,
+              }}
+            >
+              {entry.name}
+            </span>
           </React.Fragment>
         ))}
-      </div>
+      </Box>
+
+      <Box hiddenFrom="sm">
+        {entries.map((entry) => (
+          <div
+            key={entry.name}
+            style={{ color: "var(--app-text)", whiteSpace: "nowrap" }}
+          >
+            {entry.name}
+          </div>
+        ))}
+      </Box>
     </div>
   );
 };
