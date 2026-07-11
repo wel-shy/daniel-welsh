@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import SkillsList from "../components/SkillsList/SkillsList";
 import Timeline from "../components/Timeline/Timeline";
 import Publications from "../components/Publications/Publications";
+import Contact from "../components/Contact/Contact";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import Footer from "../components/Footer/Footer";
 import Seo from "../components/Seo/Seo";
@@ -20,6 +21,8 @@ const IndexPage = () => (
         <Timeline />
         <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
         <Publications />
+        <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
+        <Contact />
         <Footer />
       </Stack>
     </div>
