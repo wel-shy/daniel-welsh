@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Box, Stack, Text, Title } from "@mantine/core";
+import { Box, Button, Stack, Text, Title } from "@mantine/core";
 import useSocialLinksData from "../SocialLinks/useSocialLinksData";
 
 const SUBJECT = "Let's connect!";
@@ -11,28 +11,33 @@ const Contact = () => {
     ? `${email}?subject=${encodeURIComponent(SUBJECT)}`
     : undefined;
 
+  if (!mailtoLink) return null;
+
   return (
-    <Box>
-      <Title order={2} mb="md">
-        Get in touch
+    <Box ta="center">
+      <Title order={2} mb="0.25em">
+        Let&apos;s build something great
       </Title>
-      <Stack gap="0.5em">
-        <Text c="var(--app-text)">
-          Have a question, an opportunity, or just want to say hello? I&apos;d
-          love to hear from you.
-        </Text>
-        {email && (
-          <Text>
-            <Anchor
-              href={mailtoLink}
-              c="var(--app-text)"
-              underline="always"
-              style={{ textDecorationColor: "var(--app-accent)" }}
-            >
-              {email.replace("mailto:", "")}
-            </Anchor>
-          </Text>
-        )}
+      <Text c="var(--app-text)" mb="1.5em">
+        Open to new opportunities and interesting conversations. Drop me a
+        line, I&apos;d love to hear from you.
+      </Text>
+      <Stack align="center">
+        <Button
+          component="a"
+          href={mailtoLink}
+          size="lg"
+          radius="0"
+          variant="outline"
+          color="accent"
+          styles={{
+            root: {
+              fontFamily: "'DM Mono', monospace",
+            },
+          }}
+        >
+          Say hello &rarr;
+        </Button>
       </Stack>
     </Box>
   );

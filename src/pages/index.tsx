@@ -18,11 +18,11 @@ const IndexPage = () => (
         <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
         <SkillsList />
         <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
+        <Contact />
+        <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
         <Timeline />
         <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
         <Publications />
-        <Text ff="'DM Mono', monospace" c="dimmed" size="sm" ta="center">{"-".repeat(40)}</Text>
-        <Contact />
         <Footer />
       </Stack>
     </div>
