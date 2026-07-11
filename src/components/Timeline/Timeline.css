@@ -20,7 +20,7 @@
 .tl-item {
   background-color: transparent;
   border-radius: 0;
-  border: dashed 1px var(--mantine-color-dimmed);
+  border: dashed 1px var(--app-border);
   color: var(--app-text);
   cursor: pointer;
   padding: 1em;

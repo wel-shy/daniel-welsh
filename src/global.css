@@ -7,7 +7,8 @@
   --app-text: var(--mantine-color-text);
   --app-accent: var(--mantine-color-accent-6);
   --app-white: var(--mantine-color-white);
-  --app-shadow: #1b263b;
+  --app-border: #a7a7a7;
+  --app-shadow: #4a4d4e;
 }
 
 body {
